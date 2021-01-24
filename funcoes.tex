@@ -1,0 +1,715 @@
+\chapterimage{chapter_head_2.pdf} % Chapter heading image
+
+\chapter{Funções}
+\section{Introdução}\index{Introdução}
+
+
+\indent O estudo de funções é importante entretanto, no dia a dia da maior parte das pessoas, este estudo não faz sentido, num primeiro momento. Porém não é difícil imaginar que em toda a vida de uma pessoa ela esteja direta, ou indiretamente, ligada com as funções. Desde a elaboração de uma receita de um bolo, a quilometragem que um determinado veículo pode fazer com um tanque de combustível, a \textit{Receita}, o \textit{Custo} e o \textit{Lucro} de uma empresa.
+\\
+\indent Considere os ingredientes necessários para se fazer um (uma receita) bolo (hipotético):
+\\
+
+\begin{itemize}
+	\item{4 ovos;}
+	\item{1 litro de leite;}
+	\item{1 kg de farinha.}
+\end{itemize}
+\vspace{.5cm}
+
+Como mencionado, os ingredientes acima estão relacionadas para se fazer \textit{uma receita} ou \textit{um bolo}. Se o indivíduo deseja fazer \textit{duas receitas}, ou \textit{dois bolos}, a quantidade dos ingredientes deve dobrar! Assim:
+\\
+
+\begin{itemize}
+	\item{4 ovos $\times$ 2 $\Rightarrow$ 8 ovos;}
+	\item{1 litro de leite $\times$ 2 $\Rightarrow$ 2 litros de leite;}
+	\item{1 kg de farinha $\times$ 2 $\Rightarrow$ 2 kg de farinha.}
+\end{itemize}
+\vspace{.5cm}
+
+Se uma empresa fabrica um produto por um custo de $\mathrm{R}\$ 10,00$ a unidade e o vende a $\mathrm{R}\$ 15,00$ a unidade e tem custos de aluguel, água, energia elétrica, entre outros que totalizam $\mathrm{R}\$ 1000,00$ por mês é possível escrever sua função \textit{Custo, Receita e Lucro} da seguinte forma:
+
+\begin{ceqn}
+	\begin{align*}
+	\mathrm{R}(x) &= 15,00 \cdot x \\
+	\mathrm{C}(x) &= 10,00 \cdot x +1000,00 \\
+	\mathrm{L}(x) &= 5,00 \cdot x -1000,00
+	\end{align*}
+\end{ceqn}
+\vspace{.5cm}
+onde $x$ representa a quantidade de itens produzidos e vendidos.
+
+\section{Domínio, imagem, relação e função}\index{Domínio, imagem, relação e função}
+
+Esta seção se inicia com a ideia de \textit{Relação}. A relação deve acontecer entre dois conjuntos numéricos, $\mathbb{A}$ e $\mathbb{B}$, por exemplo.
+
+A \textit{Relação} poderá receber o nome de \textit{Função} se, e somente se, todo elemento do conjunto de partida ($\mathbb{A}$, por exemplo), tenha um, apenas um, correspondente no conjunto de destino ($\mathbb{B}$), através de uma lei. Matematicamente, uma função pode ser escrita assim:
+
+\begin{ceqn}
+	\begin{align*}
+	f: \mathbb{A} \rightarrow \mathbb{B}, \forall x \in \mathbb{A}, \, \exists y \in \mathbb{B} \,\, / \,\, y=f(x)
+	\end{align*}
+\end{ceqn}
+\\
+Vale notar que $x$ é a \textit{variável independente} e $y$ é a \textit{variável dependente} pois depende de $x$. De modo geral, o primeiro conjunto da definição de uma função está relacionado com a \textit{variável independente}, pois é o conjunto de partida e a \textit{variável dependente} está relacionada com o segundo conjunto, pois é o conjunto de chegada.
+
+Como o objetivo deste material é trabalhar com funções, apenas, não será abordado as relações de modo geral, sendo assim deve ser definido o Domínio ($\mathrm{D}$) e Imagem ($\mathrm{Im}$) de uma função ($f$), sendo:
+
+\begin{definition}[Domínio de uma função]
+	O domínio de uma função é um conjunto numérico com os valores possíveis que podem ser atribuídos à \textit{variável independente}.
+\end{definition}
+\vspace{.5cm}
+\begin{definition}[Imagem de uma função]
+	A imagem de uma função é um conjunto numérico contendo o resultado de cada elemento do domínio aplicado na função.
+\end{definition}
+\vspace{.5cm}
+
+\begin{example}
+	Considere os conjuntos $\mathbb{A}=\{1,2,3\}$ e $\mathbb{B}=\{2,4,6,8\}$ e a função $f: \mathbb{A} \rightarrow \mathbb{B} \,\, / \,\, y=f(x)=2x$. Determine o Domínio e a Imagem de $f$.
+
+\vspace{.5cm}
+\textit{\textbf{Solução:}}
+
+\vspace{.5cm}
+O conjunto de partida é o conjunto $\mathbb{A}$ então, ele é o \textit{Domínio} da função ($\mathrm{D}(f)$). Os elementos do domínio são atribuídos à \textit{variável independente}, $x$.
+
+Os elementos da \textit{Imagem} da função $f$ são obtidos da seguinte maneira:
+\vspace{.5cm}
+\begin{itemize}
+	\item{$x=1 \Rightarrow f(1)=2\cdot 1 = 2$}
+	\item{$x=2 \Rightarrow f(2)=2\cdot 1 = 4$}
+	\item{$x=3 \Rightarrow f(3)=2\cdot 1 = 6$}
+\end{itemize}
+
+\vspace{.5cm}
+Assim, o conjunto \textit{Imagem} é: $\mathrm{Im}=\{2,4,6\}$. Verifica-se que o conjunto imagem não é o conjunto $\mathbb{B}$ pois são os elementos que possuem um elemento $x$ do Domínio. Como o $8$ do conjunto $\mathbb{B}$ não possui um antecessor do conjunto $\mathbb{A}$, ele não faz parte da Imagem.
+\end{example}
+
+As funções, de modo geral, tem o conjunto dos \textit{Números Reais} como \textit{Domínio} e \textit{Imagem}, porém existem funções que o Domínio deve ser determinado, ou seja, será um subconjunto dos Reais.
+
+\begin{example}
+	Determine o Domínio e a Imagem da função $f(x)=\frac{1}{x-3}$
+
+\vspace{.5cm}
+\textit{\textbf{Solução:}}
+
+\textit{Determinação do Domínio}: É possível verificar que a função possui uma divisão e a variável independente está no denominador. Este tipo de situação requer que o \textit{denominador seja diferente de zero}, pois, caso contrário, haveria uma indeterminação. Seguindo o analisado, é possível fazer:
+
+\begin{ceqn}
+	\begin{align*}
+	x-3 &\neq 0 \\
+	x-3 +3 & \neq 0+3 \\
+	x &\neq 3
+	\end{align*}
+\end{ceqn}
+Logo, $\mathrm{D}(f)=(-\infty,3) \wedge (3,+\infty)$ ou $\mathrm{D}(f)= \mathbb{R}-\{3\}$ ou $\mathrm{D}(f)=\{x \in \mathbb{R}/ x \neq 3\}$
+
+\vspace{.5cm}
+\textit{Determinação da Imagem}: Para a determinação da imagem é necessário analisar os extremos do domínio. Assim:
+
+\vspace{.5cm}
+\begin{itemize}
+	\item{$x \rightarrow -\infty \Rightarrow f(x) \rightarrow 0$: Se $x$ aproxima-se do infinito negativo, o denominador torna-se um número muito grande e, consequentemente, a divisão aproxima-se de zero;}
+	\item{$x \rightarrow -3^{-} \Rightarrow f(x) \rightarrow -\infty$: Se $x$ aproxima-se do três negativo pela esquerda, o denominador torna-se um número muito pequeno negativo e, consequentemente, a divisão aproxima-se de menos infinito;}
+	\item{$x \rightarrow -3^{+} \Rightarrow f(x) \rightarrow \infty$: Se $x$ aproxima-se do três negativo pela direita, o denominador torna-se um número muito pequeno positivo e, consequentemente, a divisão aproxima-se de mais infinito;}
+	\item{$x \rightarrow \infty \Rightarrow f(x) \rightarrow 0$: Se $x$ aproxima-se do infinito positivo, o denominador torna-se um número muito grande e, consequentemente, a divisão aproxima-se de zero.}
+\end{itemize}
+
+\vspace{.5cm}
+Do exposto anteriormente, a Imagem nunca assumirá o valor $0$ (zero), assim a imagem será $\mathrm{Im}(f)=\mathbb{R}^{*}$ ou $\mathrm{Im}(f)=\mathbb{R}-\{0\}$
+\end{example}
+
+\vspace{.5cm}
+Muitos símbolos foram usados no exemplo anterior porém, os mesmos, serão explicados posteriormente no Capítulo \ref{limites}.
+
+\begin{example}
+	Determine o Domínio e a Imagem da função $f(x)=\sqrt{x+2}$.
+
+\vspace{.5cm}
+\textit{\textbf{Solução:}}
+
+\textit{Domínio}: Os valores que podem ser colocados na função são valores positivos (funções reais) e, nesse caso, o zero. Valores negativos dentro da raíz quadrada resultam em resultados pertencentes aos \textit{Número Complexos}, logo:
+
+\begin{ceqn}
+	\begin{align*}
+	x+2 & \geq 0 \\
+	x+2-2 &\geq 0-2 \\
+	x &\geq -2
+	\end{align*}
+\end{ceqn}
+
+Assim, $\mathrm{D}(f)=[-2,+\infty)$ ou $\mathrm{D}(f)=\{x \in \mathbb{R}/x \geq -2\}$
+\end{example}
+
+\section{Raízes de uma função}\index{Raízes de uma função}
+
+As raízes de uma função $f(x)$ pode ser calculada ao fazer $f(x)=0$, ou seja, são os pontos em que a função "corta" o eixo da variável independente. Nos casos de polinômios, o número de raízes é igual ao maior grau da função.
+Cada tipo de função possui uma metodologia diferente para o cálculo das suas raízes assim, será visto nas seções subsequentes.
+
+\section{Funções de uma variável real}\index{Funções de uma variável real}
+
+Difíceis são os processos que dependem apenas de uma variável, ou seja, ao estudar o consumo de combustível de um veículo não pode ser pensado somente na qualidade do combustível, mas deve ser pensado na alinhamento e pressão dos pneus, da temperatura, das condições da rodovia, das manutenções, da qualidade do óleo do motor, do modo como o veículo é conduzido (esta variável bem estudada resulta em economia de 30\% no consumo de combustível), entre outros fatores.
+
+Como visto na seção anterior, "geralmente" se atribui $x$ a \textit{variável independente} e $y$ ou $f(x)$ a \textit{variável dependente}, assim, tem-se duas variáveis. Mas como é possível ter duas variáveis sendo que a seção trata de \textit{funções de uma variável}?
+
+A resposta é simples: Funções de uma variável é o nome dado às funções que possuem uma, e apenas uma, \textit{variável independente}.
+
+\begin{example}
+	A área do quadrado pode ser representada por uma função de uma variável. Como a área do quadrado é a multiplicação dos dois lados, e os quatro lados são iguais, então:
+	
+	\begin{ceqn}
+		\begin{align*}
+		A_Q(l)=l \cdot l = l^2
+		\end{align*}
+	\end{ceqn}
+
+onde $l$ é a medida do lado do quadrado.
+\end{example}
+
+\begin{example}
+	A área de um retângulo é uma função de duas variáveis, pois sua área é a multiplicação de dois lados consecutivos. Como os lados do retângulo são iguais aos seus lados opostos, e não necessariamente precisam ter os quatro lados iguais, então:
+	
+	\begin{ceqn}
+		\begin{align*}
+		A_R(a,b)=a \cdot b
+		\end{align*}
+	\end{ceqn}
+
+onde $a$ e $b$ são as medidas dos lados de um retângulo.
+\end{example}
+
+\vspace{.5cm}
+
+
+\section{Funções lineares}\index{Funções lineares}
+
+
+As \textit{funções lineares} ou \textit{funções do primeiro grau} ou \textit{funções de grau um} são funções do tipo:
+
+\begin{ceqn}
+	\begin{align*}
+	f(x) = ax +b
+	\end{align*}
+\end{ceqn}
+
+\vspace{.5cm}
+Onde:
+\begin{itemize}
+	\item{$f$: nome da função;}
+	\item{$x$: variável independente;}
+	\item{$f(x)$: variável dependente;}
+	\item{$a$: coeficiente angular;}
+	\item{$b$: coeficiente linear.}
+\end{itemize}
+
+\vspace{.5cm}
+
+Um ponto importante para observar é o coeficiente angular. Este valor permite identificar se a função é \textit{crescente} ($a>0$) ou \textit{decrescente} ($a<0$). Caso $a=0$, tem-se uma função constante igual a $f(x)=b$, ou seja, para funções do primeiro grau a condição é que ($a \ne 0$)
+
+De modo geral, uma função $f(x)$ é crescente quando para quaisquer dois valores $x_1$ e $x_2$ pertencentes ao $\mathrm{Dom}(f)$, se $x_2 > x_1$, então $f(x_2)>f(x_1)$. Se $x_2>x_1 \Rightarrow f(x_2)<f(x_1)$ então a função será decrescente.
+
+
+\begin{example} Determine se a função $f(x)=2x+4$ é crescente ou decrescente.
+
+\textit{\textbf{Solução:}}
+
+	É possível verificar que o coeficiente angular é igual a $2$ e é maior do que zero, no entanto, tomando $x_1=0$ e $x_2=2$ tem-se $f(x_1)=f(0)=2\cdot0+4=4$ e $f(x_2)=f(2)=2\cdot2+4=8$, assim, $x_2>x_1\Rightarrow f(x_2)>f(x_1)$ logo, $f(x)$ é crescente.
+
+\end{example}
+
+\begin{example} Determine se a função $f(x)=-x+4$ é crescente ou decrescente.
+	
+	\textit{\textbf{Solução:}}
+	
+	É possível verificar que o coeficiente angular é igual a $-1$ e é menor do que zero, no entanto, tomando $x_1=0$ e $x_2=2$ tem-se $f(x_1)=f(0)=-1\cdot0+4=4$ e $f(x_2)=f(2)=-1\cdot2+4=2$, assim, $x_2>x_1\Rightarrow f(x_2)<f(x_1)$ logo, $f(x)$ é decrescente.
+	
+\end{example}
+
+\section{Raíz de funções lineares}\index{Raíz de funções lineares}
+
+Como mencionado anteriormente, para determinar a raíz de um função é necessário fazer $f(x)=0$. Como o maior grau das funções lineares é igual a "um" então, ter-se-á, apenas, uma raíz.
+
+\begin{example} Calcule a raíz da função $f(x)=-x+4$
+	
+	\textit{\textbf{Solução:}}
+	
+	Fazendo $f(x)=0$, tem-se:
+	\begin{ceqn}
+		\begin{align*}
+		f(x)&=0 \\
+		-x+4&=0 \\
+		-x+4-4&=0-4 \\
+		(-1) \cdot \,\,\,\, -x&=-4\,\,\,\, \cdot (-1) \\
+		x&=4
+		\end{align*}
+	\end{ceqn}
+	
+	Assim, $x=4$ é a raíz da função $f(x)=-x+4$.
+\end{example}
+
+\section{Gráficos de funções lineares}\index{Gráficos de funções lineares}
+
+Em construção
+
+\section{Funções quadráticas}\index{Funções quadráticas}
+
+As \textit{funções quadráticas} ou \textit{funções do segundo grau} ou \textit{funções de grau dois} são funções do tipo:
+
+\begin{ceqn}
+	\begin{align*}
+	f(x) = ax^2 +bx+c
+	\end{align*}
+\end{ceqn}
+
+\vspace{.5cm}
+Onde:
+\begin{itemize}
+	\item{$f$: nome da função;}
+	\item{$x$: variável independente;}
+	\item{$f(x)$: variável dependente;}
+	\item{$a$, $b$ e $c$: são coeficientes.}
+\end{itemize}
+
+\vspace{.5cm}
+
+Um ponto importante para observar é o coeficiente $a$. Este valor permite identificar se a função possui \textit{concavidade para cima} ($a>0$) ou \textit{concavidade para baixo} ($a<0$). Caso $a=0$, tem-se uma função linear igual a $f(x)=bx+c$, ou seja, para funções do segundo grau a condição é que ($a \ne 0$).
+
+\section{Raízes de funções quadráticas}\index{Raízes de funções quadráticas}
+
+Para o caso de funções do segundo grau, as raízes podem ser calculadas através da, tão conhecida, fórmula de Bháskara, que é:
+
+\begin{ceqn}
+	\begin{align*}
+	x = \frac{-b \pm \sqrt{b^2-4\cdot a \cdot c}}{2\cdot a}
+	\end{align*}
+\end{ceqn}
+
+O termo dentro da raíz quadrada, $b^2-4ac$, é conhecido como delta $\Delta$.
+
+\begin{example}\label{caso1}
+	Calcule a raíz da função $f(x)=x^2-5x+6$
+	
+	\textit{\textbf{Solução:}}
+	
+	Fazendo $f(x)=0$, tem-se:
+	\begin{ceqn}
+		\begin{align*}
+		f(x)&=0 \\
+		x^2-5x+6&=0 \\
+		\end{align*}
+	\end{ceqn}
+	
+	O próximo passo é identificar os valores dos coeficientes $a$, $b$ e $c$. Para a equação acima, tem-se:
+	
+	\begin{ceqn}
+		\begin{align*}
+		a=1 \,\,\,\, b=-5 \,\,\,\, c=6
+		\end{align*}
+	\end{ceqn}
+
+Determinado os valores dos coeficientes, calcula-se o valor de $\Delta$:
+	
+	\begin{ceqn}
+		\begin{align*}
+		\Delta &= b^2-4ac \\
+		&=(-5)^2-4 \cdot 1 \cdot 6 \\
+		&= (-5)\cdot (-5)-24 \\
+		&= 25 - 24 \\
+		\Delta &=1 \,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, (\mathrm{Caso 1:}\,\, \Delta>0)
+		\end{align*}
+	\end{ceqn}
+	
+	Nesta parte, deverá ser substituído os valores dos coeficientes e o $\Delta$ calculado:
+	
+	\begin{ceqn}
+		\begin{align*}
+		x &= \frac{-b\pm \sqrt{\Delta}}{2a} \\
+		&= \frac{-(-5)\pm\sqrt{1}}{2\cdot 1} \\
+		&= \frac{5 \pm 1}{2} \Rightarrow \\
+		x_1 &= \frac{5+1}{2}=\frac{6}{2} \Rightarrow x_1 = 3 \\
+		x_2 &= \frac{5-1}{2}=\frac{4}{2} \Rightarrow x_2 = 2 
+		\end{align*}
+	\end{ceqn}
+
+Assim, as raízes podem ser representadas através do conjunto solução $\mathbb{S}=\{2,3\}$
+
+\end{example}
+
+\begin{example}\label{caso2}
+	Calcule a raíz da função $f(x)=x^2-4x+4$
+	
+	\textit{\textbf{Solução:}}
+	
+	Fazendo $f(x)=0$, tem-se:
+	\begin{ceqn}
+		\begin{align*}
+		f(x)&=0 \\
+		x^2-4x+4&=0 \\
+		\end{align*}
+	\end{ceqn}
+	
+	O próximo passo é identificar os valores dos coeficientes $a$, $b$ e $c$. Para a equação acima, tem-se:
+	
+	\begin{ceqn}
+		\begin{align*}
+		a=1 \,\,\,\, b=-4 \,\,\,\, c=4
+		\end{align*}
+	\end{ceqn}
+	
+	Determinado os valores dos coeficientes, calcula-se o valor de $\Delta$:
+	
+	\begin{ceqn}
+		\begin{align*}
+		\Delta &= b^2-4ac \\
+		&=(-4)^2-4 \cdot 1 \cdot 4 \\
+		&= (-4)\cdot (-4)-16 \\
+		&= 16-16 \\
+		\Delta &=0 \,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, (\mathrm{Caso 2:}\,\, \Delta=0)
+		\end{align*}
+	\end{ceqn}
+	
+	Nesta parte, deverá ser substituído os valores dos coeficientes e o $\Delta$ calculado:
+	
+	\begin{ceqn}
+		\begin{align*}
+		x &= \frac{-b\pm \sqrt{\Delta}}{2a} \\
+		&= \frac{-(-4)\pm\sqrt{0}}{2\cdot 1} \\
+		&= \frac{4 \pm 0}{2} \Rightarrow \\
+		x_1 &= \frac{4+0}{2}=\frac{4}{2} \Rightarrow x_1 = 2 \\
+		x_2 &= \frac{4-0}{2}=\frac{4}{2} \Rightarrow x_2 = 2 
+		\end{align*}
+	\end{ceqn}
+	
+	Assim, as raízes podem ser representadas através do conjunto solução $\mathbb{S}=\{2\}$
+	
+\end{example}
+
+\begin{example}\label{caso3} Calcule a raíz da função $f(x)=x^2-6x+13$
+	
+	\textit{\textbf{Solução:}}
+	
+	Fazendo $f(x)=0$, tem-se:
+	\begin{ceqn}
+		\begin{align*}
+		f(x)&=0 \\
+		x^2-6x+13&=0 \\
+		\end{align*}
+	\end{ceqn}
+	
+	O próximo passo é identificar os valores dos coeficientes $a$, $b$ e $c$. Para a equação acima, tem-se:
+	
+	\begin{ceqn}
+		\begin{align*}
+		a=1 \,\,\,\, b=-6 \,\,\,\, c=13
+		\end{align*}		
+	\end{ceqn}
+	
+	Determinado os valores dos coeficientes, calcula-se o valor de $\Delta$:
+	
+	\begin{ceqn}
+		\begin{align*}
+		\Delta &= b^2-4ac \\
+		&=(-6)^2-4 \cdot 1 \cdot 13 \\
+		&= (-6)\cdot (-6)-52 \\
+		&= 36 - 52 \\
+		\Delta &=-16 \,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, (\mathrm{Caso 3:}\,\, \Delta<0)
+		\end{align*}
+	\end{ceqn}
+	
+	Nesta parte, deverá ser substituído os valores dos coeficientes e o $\Delta$ calculado:
+	
+	\begin{ceqn}
+	\begin{align*}
+	x &= \frac{-b\pm \sqrt{\Delta}}{2a} \\
+	&= \frac{-(-6)\pm \sqrt{-16}}{2\cdot 1} \xRightarrow{\text{\ref{complexo}}} \\
+	&= \frac{6 \pm \sqrt{16 \cdot (-1)}}{2} \\
+	&= \frac{6\pm \sqrt{16} \cdot \sqrt{-1}}{2} \\
+	&= \frac{6\pm 4 \cdot i}{2} \Rightarrow \\
+	x_1 &= \frac{6+4i}{2} = 3+2i \\
+	x_2 &= \frac{6-4i}{2} = 3-2i \\
+	\end{align*}
+\end{ceqn}
+
+	Assim, as raízes podem ser representadas através do conjunto solução $\mathbb{S}=\{3 \pm 2i\}$
+	
+\end{example}
+
+\section{Gráficos de funções quadráticas}\index{Gráficos de funções quadráticas}
+
+Os gráficos de funções de segunda grau podem apresentar 6 formas diferentes, que são:
+
+\begin{itemize}
+	\item{Caso 1: $a > 0$ e $\Delta > 0 \Rightarrow$ Parábola com concavidade para \textbf{cima} e duas \textbf{raízes reais distintas};}
+	\item{Caso 2: $a > 0$ e $\Delta = 0 \Rightarrow$ Parábola com concavidade para \textbf{cima} e duas \textbf{raízes reais iguais};}
+	\item{Caso 3: $a > 0$ e $\Delta < 0 \Rightarrow$ Parábola com concavidade para \textbf{cima} e duas \textbf{raízes complexas};}
+	\item{Caso 4: $a < 0$ e $\Delta > 0 \Rightarrow$ Parábola com concavidade para \textbf{baixo} e duas \textbf{raízes reais distintas};}
+	\item{Caso 5: $a < 0$ e $\Delta = 0 \Rightarrow$ Parábola com concavidade para \textbf{baixo} e duas \textbf{raízes reais iguais};}
+	\item{Caso 6: $a < 0$ e $\Delta < 0 \Rightarrow$ Parábola com concavidade para \textbf{baixo} e duas \textbf{raízes complexas};} \\
+\end{itemize}
+
+Para fazer o gráfico é ncessário conhecer alguns pontos fundamentais da função: \\
+
+\begin{itemize}
+	\item[1.]{\textbf{Raízes}: Todas as funções do segundo grau possuem raízes, no entanto, as raízes complexas não podem ser representadas no plano real;}
+	\item[2.]{\textbf{Vértice}: Todas as funções do segundo grau possuem vértices. Os vértices nessas funções representam um ponto de \textbf{extremo}, que pode ser \textbf{máximo} ($a<0$) ou \textbf{mínimo} ($a>0$);}
+	\item[3.]{\textbf{Intercepto com o eixo vertical}: Este valor implica onde a função \textit{"corta o eixo y"}.} \\
+\end{itemize}
+
+\begin{example}
+	(Caso 1) Determine o gráfico da função $f(x)=x^2-5x+6$
+	
+	\solucao
+	
+	Essa função é a mesma do Exemplo \ref{caso1}, ou seja, as raízes já foram determinadas ($x_1 = 2$ e $x_2 = 3$), bem como o valor do $\Delta$ ($= 1$).\\
+	
+	Assim, é necessário determinar o Vértice. A determinação do mesmo pode ser feita usando:
+	
+	\begin{ceqn}
+		\begin{align*}
+		x_v &= \frac{-b}{2a} \Rightarrow x_v = \frac{-(-5)}{2 \cdot 1} = \frac{5}{2} \\
+		y_v &= \frac{-\Delta}{4a} \Rightarrow y_v = \frac{-1}{4 \cdot 1} = \frac{-1}{4} \\
+		\end{align*}
+	\end{ceqn}
+	
+	Portanto, as coordenadas do Vértice são $\left (\frac{5}{2},\frac{-1}{4} \right )$.\footnote{Um modo mais fácil de representar no plano é usar a representação decimal assim, as coordenadas do vértice ficará $(2,5;-0,25)$.}\\
+	
+	O último passo é verificar o intercepto com o eixo vertical, ou seja, determinar o valor de $f(x)$ quando $x=0$, assim:
+	
+	\begin{ceqn}
+		\begin{align*}
+		f(x) &= x^2-5x+6 \\
+		x=0 \Rightarrow f(0)&=0^2-5 \cdot 0 +6 \\
+		f(0) &= 6 
+		\end{align*}
+	\end{ceqn}
+	
+	Unindo as informações:\\
+	\begin{itemize}
+		\item[1.]{\textbf{Raízes}: $x_1=(2,0)$ e $x_2=(3,0)$}
+		\item[2.]{\textbf{Vértice}:$\left( \frac{5}{2},\frac{-1}{4} \right)$}
+		\item[3.]{\textbf{Intercepto}: $(0,6)$}\\
+	\end{itemize}
+	
+	O gráfico fica:\\
+	\begin{center}
+		\begin{tikzpicture}[scale=1.0,line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+		\begin{axis}[
+		x=1cm,y=1cm,
+		axis lines=middle,
+		grid style=dashed,
+		ymajorgrids=true,
+		xmajorgrids=true,
+		xmin=-1.1,
+		xmax=6.1,
+		ymin=-1.2,
+		ymax=7.5,
+		xlabel=$x$,
+		ylabel=$y$,
+		width=10cm,
+		xtick={-1,...,6},
+		ytick={-1,...,7},]
+		\draw[line width=2pt,color=red,smooth,samples=100,domain=-.25:5.25] plot(\x,{(\x)^(2)-5*(\x)+6});
+		\begin{scriptsize}
+		\draw[color=red] (5.65,6.5) node {$f(x)$};
+		\draw[color=black] (2.1,0.3) node {$x_1$};
+		\draw[color=black] (3,-0.7) node {Vértice};
+		\draw[color=black] (3.1,0.3) node {$x_2$};
+		\draw[color=black] (.5,6) node {$f(0)$};
+		\end{scriptsize}
+		\node [fill=black, circle, scale=0.5] at (axis cs: 0,6) {};
+		\node [fill=black, circle, scale=0.5] at (axis cs: 2.5,-.25) {};
+		\node [fill=black, circle, scale=0.5] at (axis cs: 2,0) {};
+		\node [fill=black, circle, scale=0.5] at (axis cs: 3,0) {};
+		\end{axis}
+		\end{tikzpicture}
+	\end{center}
+	
+\end{example}
+\begin{example}
+	(Caso 2) Determine o gráfico da função $f(x)=x^2-4x+4$
+	
+	\solucao
+	
+	Essa função é a mesma do Exemplo \ref{caso2}, ou seja, as raízes já foram determinadas ($x_1 =x_2= 2$), bem como o valor do $\Delta$ ($= 0$).\\
+	
+	Assim, é necessário determinar o Vértice (V). A determinação do mesmo pode ser feita usando:
+	
+	\begin{ceqn}
+		\begin{align*}
+		x_v &= \frac{-b}{2a} \Rightarrow x_v = \frac{-(-4)}{2 \cdot 1} = \frac{4}{2}=2 \\
+		y_v &= \frac{-\Delta}{4a} \Rightarrow y_v = \frac{-0}{4 \cdot 1} = 0 \\
+		\end{align*}
+	\end{ceqn}
+	
+	Portanto, as coordenadas de V são $\left ( 2,0 \right )$.\\
+	
+	O último passo é verificar o intercepto com o eixo vertical, ou seja, determinar o valor de $f(x)$ quando $x=0$, assim:
+	
+	\begin{ceqn}
+		\begin{align*}
+		f(x) &= x^2-4x+4 \\
+		x=0 \Rightarrow f(0)&=0^2-4 \cdot 0 +4 \\
+		f(0) &= 4\\ 
+		\end{align*}
+	\end{ceqn}
+	
+	Unindo as informações:\\
+	\begin{itemize}
+		\item[1.]{\textbf{Raízes}: $x_1=x_2=(2,0)$}
+		\item[2.]{\textbf{Vértice}: $(2,0)$}
+		\item[3.]{\textbf{Intercepto}: $(0,4)$}\\
+	\end{itemize}
+	Das informações anteriores, é possível verificar que as raízes ($x_1$ e $x_2$) têm a mesma coordenada que V, ou seja, $(2,0)$. O processo, nesse caso, fica um pouco complicado pois, na realidade, existem dois pontos apenas: o intercepto e o ponto $(2,0)$.\\
+	
+	Para resolver esse problema, deve ser escolhido dois valores para $x$, calcular suas imagens ($f(x)$) e usá-los como complemento\footnote{Sugestão: sabendo o $x_v$, neste exemplo $x_v=2$, escolhe-se dois valores para $x$ ($x_3$ e $x_4$, por exemplo), de modo que $|x_v-x_3|=|x_v-x_4|$. Essa escolha baseia-se no fato de que, pelo vértice é possível imaginar um \textit{eixo de simetria}.}. Assim, escolhendo $x_3=1$ e $x_4=3$, tem-se:
+	
+	\begin{ceqn}
+		\begin{align*}
+		x_3=1 \Rightarrow f(1) &= 1^2-4 \cdot 1 +4 = 1 \\
+		x_4=3 \Rightarrow f(3) &= 3^2-4 \cdot 3 +4 = 1 \\
+		\end{align*}
+	\end{ceqn}
+	
+	É possível chamar essas coordenadas calculadas, de pontos, $A$ e $B$, sendo assim, $A=(1,1)$ e $B=(3,1)$
+	
+	Logo, o gráfico fica:\\
+	\begin{center}
+		\begin{tikzpicture}[scale=1.4,line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+		\begin{axis}[
+		x=1cm,y=1cm,
+		axis lines=middle,
+		grid style=dashed,
+		ymajorgrids=true,
+		xmajorgrids=true,
+		xmin=-0.5,
+		xmax=4.6000000000000005,
+		ymin=-0.5000013006060611,
+		ymax=4.9,
+		xlabel=$x$,
+		ylabel=$y$,
+		width=10cm,
+		xtick={-1,0,...,5},
+		ytick={-1,0,...,5},]
+		\draw[line width=2pt,color=red,smooth,samples=100,domain=-0.1:4.1] plot(\x,{(\x)^(2)-4*(\x)+4});
+		\begin{scriptsize}
+		\draw[color=red] (3.35,4.2) node {$f(x)$};
+		\draw[color=black] (.5,4) node {$f(0)$};
+		\end{scriptsize}
+		\node [fill=black, circle, scale=0.5] at (axis cs: 0,4) {};
+		\node [fill=black, circle, scale=0.5] at (axis cs: 1,1) {};
+		\node [fill=black, circle, scale=0.5, pin=75:{A}] at (axis cs: 1,1) {};
+		\node [fill=black, circle, scale=0.5, pin=105:{B}] at (axis cs: 3,1) {};
+		\node [fill=black, circle, scale=0.1, pin=60:{$x_2$}] at (axis cs: 2,0) {};
+		\node [fill=black, circle, scale=0.1, pin=120:{$x_1$}] at (axis cs: 2,0) {};
+		\node [fill=black, circle, scale=0.5, pin=90:{V}] at (axis cs: 2,0) {};
+		\node [fill=black, circle, scale=0.5] at (axis cs: 3,1) {};
+		\end{axis}
+		\end{tikzpicture}
+	\end{center}
+	
+\end{example}
+
+\begin{example}
+	(Caso 3) Determine o gráfico da função $f(x)=x^2-6x+13$
+	
+	\solucao
+	
+	Essa função é a mesma do Exemplo \ref{caso3}, ou seja, as raízes já foram determinadas ($x_1 = 3-2i$ e $x_2 = 3+2i$), bem como o valor do $\Delta$ ($= -16$).\\
+	
+	A determinação do vértice pode ser feita usando:
+	
+	\begin{ceqn}
+		\begin{align*}
+		x_v &= \frac{-b}{2a} \Rightarrow x_v = \frac{-(-6)}{2 \cdot 1} = \frac{6}{2} = 3 \\
+		y_v &= \frac{-\Delta}{4a} \Rightarrow y_v = \frac{-(-16)}{4 \cdot 1} = \frac{16}{4}=4 \\
+		\end{align*}
+	\end{ceqn}
+	
+	Portanto, as coordenadas do Vértice são $(3,4))$.\\
+	
+	O último passo é verificar o intercepto com o eixo vertical, ou seja, determinar o valor de $f(x)$ quando $x=0$, assim:
+	
+	\begin{ceqn}
+		\begin{align*}
+		f(x) &= x^2-6x+13 \\
+		x=0 \Rightarrow f(0)&=0^2-6 \cdot 0 +13 \\
+		f(0) &= 13 
+		\end{align*}
+	\end{ceqn}
+	
+	Unindo as informações:\\
+	\begin{itemize}
+		\item[1.]{\textbf{Raízes}: $x_1=3-2i$ e $x_2=3+2i$}
+		\item[2.]{\textbf{Vértice}: $(3,4)$}
+		\item[3.]{\textbf{Intercepto}: $(0,13)$}\\
+	\end{itemize}
+	Das informações anteriores, é possível verificar que as raízes ($x_1$ e $x_2$) pertencem aos conjunto dos números complexos e não tem representação no plano real. O processo, nesse caso, fica um pouco complicado pois, na realidade, existem dois pontos apenas: o intercepto e o vértice $(3,4)$.\\
+	
+	Para resolver esse problema, deve ser escolhido dois valores para $x$, calcular suas imagens ($f(x)$) e usá-los como complemento. Assim, escolhendo $x_3=2$ e $x_4=4$, tem-se:
+	
+	\begin{ceqn}
+		\begin{align*}
+		x_3=2 \Rightarrow f(2) &= 2^2-6 \cdot 2 +13 = 5 \\
+		x_4=4 \Rightarrow f(4) &= 4^2-6 \cdot 4 +13 = 5 \\
+		\end{align*}
+	\end{ceqn}
+	
+	É possível chamar essas coordenadas calculadas, de pontos, $A$ e $B$, sendo assim, $A=(2,5)$ e $B=(4,5)$
+	
+	O gráfico fica:\\
+	\begin{center}
+		\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.5cm,y=.9cm]
+		\begin{axis}[
+		x=1.5cm,y=.9cm,
+		axis lines=middle,
+		grid style=dashed,
+		ymajorgrids=true,
+		xmajorgrids=true,
+		xmin=-1.2,
+		xmax=6.9,
+		ymin=-1.1,
+		ymax=15.,
+		xlabel=$x$,
+		ylabel=$y$,
+		width=10cm,
+		xtick={-1,0,...,7},
+		ytick={-1,0,...,14},]
+		\draw[line width=2pt,color=red,smooth,samples=100,domain=-.25:6.5] plot(\x,{(\x)^(2)-6*(\x)+13});
+		\node [fill=black, circle, scale=0.5, pin=45:{$f(0)$}] at (axis cs: 0,13) {};
+		\node [fill=black, circle, scale=0.5, pin=75:{A}] at (axis cs: 2,5) {};
+		\node [fill=black, circle, scale=0.5, pin=105:{B}] at (axis cs: 4,5) {};
+		\node [fill=black, circle, scale=0.5, pin=-45:{V}] at (axis cs: 3,4) {};
+		\end{axis}
+		\end{tikzpicture}
+	\end{center}
+	
+\end{example}
+
+Os casos em que o valor de $a$ forem menores que zero, o processo é semelhante, no entanto, o resultado será uma parábola com a \textbf{concavidade para baixo}.
+
+\section{Exercícios}\index{Exercícios}
+
+\begin{exercise}
+	Qual a diferença entre Equação e Função?
+\end{exercise}
+
+\begin{exercise}
+	Resolva a equação $x^2+4=0$ considerando os conjuntos:
+	\begin{itemize}
+		\item[a.]{$\mathbb{N}$}
+		\item[b.]{$\mathbb{Z}$}
+		\item[c.]{$\mathbb{Q}$}
+		\item[d.]{$\mathbb{R}$}
+		\item[e.]{$\mathbb{C}$}
+	\end{itemize}
+\end{exercise}
+
+\begin{exercise}
+	Calcule as raízes das funções abaixo e represente graficamente.
+	\begin{itemize}
+		\item[a.]{$f(x) = 3x - 6$}
+		\item[b.]{$g(x) = x^2-5x+6$}
+		\item[c.]{$f(y) = 5x - 2$}
+		\item[d.]{$f(x) = x^2-4x+4$}
+		\item[e.]{$g(w) = w^2+4$}
+	\end{itemize}
+\end{exercise}

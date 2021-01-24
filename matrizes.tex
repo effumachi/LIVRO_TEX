@@ -1,0 +1,553 @@
+%----------------------------------------------------------------------------------------
+%	CHAPTER 1
+%----------------------------------------------------------------------------------------
+\chapterimage{chapter_head_2.pdf} % Chapter heading image
+
+\chapter{Matrizes}
+
+\section{Conceitos iniciais}\index{Conceitos iniciais}
+
+
+Uma matriz pode ser definida como uma \textit{coleção de elementos} e cada elemento possui uma posição definida através dos indicadores \textit{i} e \textit{j}, sendo \textit{i} o indicador para a linha e \textit{j} o indicador para a coluna. Os valores possíveis para \textit{i, j} são valores naturais\footnote{O autor considera números naturais os positivos diferentes de zero pois, \textit{naturalmente}, não dizemos \textit{"Tenho ZERO Ferrari"} para expressar a ideia de que \textit{"NÃO TENHO uma Ferrari"}.} ($i, j \in \mathbb{N} = \{1,2,3,... \}$), ou inteiros positivos diferente de zero ($i, j \in \mathbb{Z}_{+}^{*} = \{ 1, 2, 3, ... \}$).
+A representação de um elemento é dada por:
+
+\begin{ceqn}
+	\begin{align*}
+	a_{ij}
+	\end{align*}
+\end{ceqn}
+
+no caso acima, o elemento possui o nome \textit{a} com uma posição qualquer \textit{i , j}. Os nomes dos elementos costumam seguir o
+mesmo nome da matriz que os contém, mas em letra minúscula. Assim, se a matriz tiver o nome $\mathbb{A}$ seus elementos serão $a_{i j}$,
+se a matriz se chamar $\mathbb{B}$ seus elementos serão $b_{i j}$ e assim sucessivamente. Os nomes das matrizes são em letras maiúsculas
+com uma barra dupla em sua construção. 
+Existem, também, os indicadores para as matrizes; esses indicadores são chamados de \textit{Ordem da matriz}, ou seja, representa o número
+de linhas e de colunas. Logo, uma matriz chamada A com 2 linhas e 3 colunas é escrita da seguinte forma:
+
+\begin{ceqn}
+	\begin{align*}
+	\mathbb{A}_{2\mathrm{{x}}3}=\left[\begin{array}{ccc}
+	a_{11} & a_{12} & a_{13}\\
+	a_{21} & a_{22} & a_{23}
+	\end{array}\right]
+	\end{align*}
+\end{ceqn}
+
+Desse modo temos a representação de uma \textit{matriz} e de todos os seus \textit{elementos}. É possível verificar que o número de
+elementos da matriz é 6. De modo geral, o número de elementos ($\#_{elementos}$) de uma matriz será o resultado da \textit{multiplicação} do número de \textit{linhas} pelo número de \textit{colunas}, assim:
+
+\begin{ceqn}
+	\begin{align*}
+	\#_{elementos}=i\cdot j
+	\end{align*}
+\end{ceqn}
+
+\begin{example}
+Determine o número de elementos da matriz $\mathbb{A}_{3\mathrm{x}5} $.\\
+Na matriz do enunciado tem-se $i=3$ (linhas) e $j=5$ (colunas).
+Logo, o número de elementos dessa matriz será $i \cdot j = 3 \cdot 5 = 15\, \mathrm{elementos}$
+\end{example}
+
+
+\begin{example}
+	Considere a matriz
+	
+	\begin{align*}
+	\mathbb{B}_{3\mathrm{x}2} & =\begin{bmatrix}3 & 7\\
+	1 & 6\\
+	10 & 4
+	\end{bmatrix}
+	\end{align*}
+	
+	escreva todos os elementos colocando sua posição corretamente.
+
+	Como o nome da matriz dada é $\mathbb{B}$, os elementos serão escritos pela letra minúscula do nome da matriz, ou seja, os elementos serão
+	$b_{i j}$.
+\begin{itemize}
+	\item O primeiro elemento está na \textit{linha} 1 e \textit{coluna} 1,
+	então: $b_{1 1} = 3$
+	\item O segundo elemento está na \textit{linha} 1 e \textit{coluna} 2,
+	então: $b_{1 2} = 7$
+	\item O terceiro elemento está na \textit{linha} 2 e \textit{coluna} 1,
+	então: $b_{2 1} = 1$
+	\item O quarto elemento está na \textit{linha} 2 e \textit{coluna} 2,
+	então: $b_{2 2} = 6$
+	\item O quinto elemento está na \textit{linha} 3 e \textit{coluna} 1,
+	então: $b_{3 1} = 10$
+	\item O sexto elemento está na \textit{linha} 3 e \textit{coluna} 2, então:
+	$b_{3 2} = 4$
+\end{itemize}
+\end{example}
+As representações das matrizes podem ser da seguinte forma, ainda:
+
+\begin{ceqn}
+	\begin{align*}
+	\mathbb{M}_{2}\quad\mathrm{ou}\quad\mathbb{M}_{3}\quad\mathrm{ou\quad\mathbb{M}_{4}\,...}
+	\end{align*}
+\end{ceqn}
+
+Nesse caso, as matrizes são chamadas de \textit{matrizes quadradas} pois elas possuem o número de linhas igual ao número de colunas, ou
+seja, $i=j$. O primeiro caso é uma matriz quadrada de ordem 2, a segunda é uma matriz quadrada de ordem 3, a terceira é uma matriz
+quadrada de ordem 4, e assim sucessivamente.
+\begin{example}
+	Matriz de segunda ordem, ou matriz quadrada de ordem 2:
+
+\begin{ceqn}
+	\begin{align*}
+		\mathbb{B}_{2}=\begin{bmatrix}b_{11} & b_{12}\\
+	b_{21} & b_{22}
+	\end{bmatrix}
+	\end{align*}
+\end{ceqn}
+
+\end{example}
+%
+\begin{example}
+	Matriz quadrada de ordem 3:
+	
+\begin{ceqn}
+	\begin{align*}
+		\mathbb{B}_{3}=\begin{bmatrix}b_{11} & b_{12} & b_{13}\\
+	b_{21} & b_{22} & b_{23}\\
+	b_{13} & b_{23} & b_{33}
+	\end{bmatrix}
+	\end{align*}
+\end{ceqn}
+
+\end{example}
+
+
+\section{Igualdade entre matrizes}
+
+Duas, ou mais, matrizes são iguais quando, nas respectivas posições,
+todos os elementos são iguais.
+\begin{example}
+	Considere as matrizes
+	
+\begin{ceqn}
+	\begin{align*}
+		\mathbb{A}_{2\mathrm{x}3}=\begin{bmatrix}1 & 2 & 3\\
+	6 & 5 & 4
+	\end{bmatrix}\,\,\,\,\,\,\,\mathrm{e\,\,\,\,\,\,\,\mathbb{B}_{2\mathrm{x}3}=\begin{bmatrix}1 & 2 & 3\\
+		6 & 5 & 4
+		\end{bmatrix}}
+	\end{align*}
+\end{ceqn}
+	
+	As matrizes $\mathbb{A}$ e $\mathbb{B}$ são iguais, pois $a_{11}=b_{11}=1$
+	e $a_{12}=b_{12}=2$ e $a_{13}=b_{13}=3$ e $a_{21}=b_{21}=6$ e $a_{22}=b_{22}=5$
+	e $a_{23}=b_{23}=4$
+\end{example}
+%
+\begin{example}
+	Considere as matrizes
+	
+\begin{ceqn}
+	\begin{align*}
+		\mathbb{A}_{2\mathrm{x}3}=\begin{bmatrix}1 & 2 & 3\\
+	6 & 5 & 4
+	\end{bmatrix}\,\,\,\,\,\,\,\mathrm{e\,\,\,\,\,\,\mathbb{B}_{2\mathrm{x}3}=\begin{bmatrix}1 & 2 & 3\\
+		6 & 5 & 2
+		\end{bmatrix}}
+	\end{align*}
+\end{ceqn}
+	
+	As matrizes $\mathbb{A}$ e $\mathbb{B}$ NÃO são iguais. Embora $a_{11}=b_{11}=1$
+	e $a_{12}=b_{12}=2$ e $a_{13}=b_{13}=3$ e $a_{21}=b_{21}=6$ e $a_{22}=b_{22}=5$,
+	tem-se que $a_{23}\ne b_{23}$
+\end{example}
+%
+\begin{example}
+	Determine os valores de $x$ e $y$ de modo que as matrizes abaixo
+	sejam iguais:
+
+\begin{ceqn}
+	\begin{align*}
+	\mathbb{A}_{2}=\begin{bmatrix}1 & x+10\\
+	3 & 5
+	\end{bmatrix}\quad\mathrm{e}\quad\mathbb{B}_{2}=\begin{bmatrix}1 & 25\\
+	y-7 & 5
+	\end{bmatrix}
+	\end{align*}
+\end{ceqn}
+\\
+	Analisando as matrizes, verifica-se que $a_{11}=b_{11}=1$ e $a_{22}=b_{22}=5$.
+	O elemento $a_{12}=x+10$ e $b_{12}=25$ devem ser iguais, ou seja:
+
+\begin{ceqn}
+	\begin{align*}
+	a_{12} &= b_{12} \\
+	x+10 &= 25 \\
+	x+10-10 &= 25-10 \\
+	x &= 15 \\
+	\end{align*}
+\end{ceqn}
+
+De modo análogo, o elemento $a_{21}=3$ e $b_{21}=y-7$ devem ser iguais, assim:
+
+\begin{ceqn}
+	\begin{align*}
+		a_{21} &=b_{21} \\
+		3 &=y-7 \\
+		3+7 &=y-7+7 \\
+		10 &=y \\
+	\end{align*}
+\end{ceqn}
+
+	Substituindo os valores calculados, $x$ e $y$, tem-se:
+
+\begin{ceqn}
+	\begin{align*}
+		\mathbb{A}_{2} &= \mathbb{B}_{2}\\
+		\begin{bmatrix}1 & 15+10\\
+		3 & 5
+		\end{bmatrix} &= \begin{bmatrix}1 & 25\\
+		10-7 & 5
+		\end{bmatrix}\\
+		\begin{bmatrix}1 & 25\\
+		3 & 5
+		\end{bmatrix} &= \begin{bmatrix}1 & 25\\
+		3 & 5
+		\end{bmatrix}
+	\end{align*}
+\end{ceqn}
+
+\end{example}
+
+\section{Adição e subtração de matrizes}
+
+A adição, ou subtração, de matrizes só podem ser feitas se a(s) matriz(es) possuir/possuírem a mesma ordem. Assim, $\mathbb{A}_{i\mathrm{x}j}$
+e $\mathbb{B}_{i\mathrm{x}j}$ podem ser somadas e/ou subtraídas da seguinte maneira:
+
+
+\begin{ceqn}
+	\begin{align*}
+		\mathbb{A}_{i\mathrm{x}j}\pm\mathbb{B}_{i\mathrm{x}j} & = \begin{bmatrix}a_{11} & a_{12} & \cdots & a_{1j}\\
+	a_{21} & a_{22} & \cdots & a_{2j}\\
+	\vdots & \vdots & \ddots & \vdots\\
+	a_{i1} & a_{i2} & \cdots & a_{ij}
+	\end{bmatrix}\pm\begin{bmatrix}b_{11} & b_{12} & \cdots & b_{1j}\\
+	b_{21} & b_{22} & \cdots & b_{2j}\\
+	\vdots & \vdots & \ddots & \vdots\\
+	b_{i1} & b_{i2} & \cdots & b_{ij}
+	\end{bmatrix}\\
+	& = \begin{bmatrix}a_{11}\pm b_{11} & a_{12}\pm b_{12} & \cdots & a_{1j}\pm b_{1j}\\
+	a_{21}\pm b_{21} & a_{22}\pm b_{22} & \cdots & a_{2j}\pm b_{2j}\\
+	\vdots & \vdots & \ddots & \vdots\\
+	a_{i1}\pm b_{i1} & a_{i2}\pm b_{i2} & \cdots & a_{ij}\pm b_{ij}
+	\end{bmatrix}
+	\end{align*}
+\end{ceqn}
+
+\begin{example}
+	\video \, Considere as matrizes abaixo e efetue a adição entre elas, ou seja, $\mathbb{A}+\mathbb{B}$
+	
+	\begin{ceqn}
+		\begin{align*}
+			\mathbb{A}_{2\mathrm{x}3}=\begin{bmatrix}1 & 3 & -5\\
+		2 & 6 & 4
+		\end{bmatrix}\qquad\mathrm{e}\qquad\mathbb{B}_{2\mathrm{x}3}=\begin{bmatrix}3 & 5 & 6\\
+		-2 & 4 & 10
+		\end{bmatrix}
+		\end{align*}
+	\end{ceqn}
+\\
+
+	Partindo das matrizes dadas, podemos escrever:
+
+
+\begin{ceqn}
+	\begin{align*}
+		\mathbb{A}_{2\mathrm{x}3}+\mathbb{B}_{2\mathrm{x}3} & =\\
+	\begin{bmatrix}1 & 3 & -5\\
+	2 & 6 & 4
+	\end{bmatrix}+\begin{bmatrix}3 & 5 & 6\\
+	-2 & 4 & 10
+	\end{bmatrix} & =  \begin{bmatrix}1+3 & 3+5 & -5+6\\
+	2+(-2) & 6+4 & 4+10
+	\end{bmatrix}\\
+	& =  \begin{bmatrix}4 & 8 & 1\\
+	0 & 10 & 14
+	\end{bmatrix}
+	\end{align*}
+\end{ceqn}
+
+
+\doutor \url{https://www.youtube.com/watch?v=VeP6FNgG9bg}
+\end{example}
+
+\subsection{Multiplicação de um escalar por uma matriz}
+
+Esse tipo de multiplicação pode ser entendido como \textit{um número multiplicando uma matriz}, sendo assim, matematicamente, basta multiplicar todos os elementos da matriz pelo número que está multiplicando a matriz.
+
+Nesse momento a notação se faz necessária, pois numa expressão do tipo $x \cdot y$ não fica evidente quem é a matriz e quem é o escalar,
+ou se são duas matrizes, ou se são dois escalares! Então dado um escalar $a$ e uma matriz $\mathbb{A}_{ij}$ a multiplicação pode ser escrita
+como:
+
+
+\begin{ceqn}
+	\begin{align*}
+		a\cdot\mathbb{A}_{i\mathrm{x}j} & =  a\cdot\begin{bmatrix}a_{11} & a_{12} & \cdots & a_{1j}\\
+	a_{21} & a_{22} & \cdots & a_{2j}\\
+	\vdots & \vdots & \ddots & \vdots\\
+	a_{i1} & a_{i2} & \cdots & a_{ij}
+	\end{bmatrix}\\
+	& =  \begin{bmatrix}a\cdot a_{11} & a\cdot a_{12} & \cdots & a\cdot a_{1j}\\
+	a\cdot a_{21} & a\cdot a_{22} & \cdots & a\cdot a_{2j}\\
+	\vdots & \vdots & \ddots & \vdots\\
+	a\cdot a_{i1} & a\cdot a_{i2} & \cdots & a\cdot a_{ij}
+	\end{bmatrix}
+	\end{align*}
+\end{ceqn}
+
+Embora seja um pouco confuso, devido a quantidade de letras ``a'', isso foi escolhido propositalmente para o entendimento de um conceito: o escalar $a$ é diferente de todos os elementos da matriz pois não possui indicadores, ou seja, subíndice.
+
+
+\begin{example}
+	Calcule o valor de $2\cdot \mathbb{A}+4\cdot \mathbb{B}$ sendo
+	
+	\begin{ceqn}
+		\begin{align*}
+			\mathbb{A}_{2\mathrm{x}3}=\begin{bmatrix}1 & 3 & -5\\
+		2 & 6 & 4
+		\end{bmatrix}\qquad\mathrm{e}\qquad\mathbb{B}_{2\mathrm{x}3}=\begin{bmatrix}3 & 5 & 6\\
+		-2 & 4 & 10
+		\end{bmatrix}
+		\end{align*}
+	\end{ceqn}
+
+	Para calcular, basta substituir os valores das matrizes, multiplicar pelo escalar e somar as matrizes. Mesmo sabendo o procedimento para calcular a expressão dada, é importante verificar a ordem das matrizes envolvidas na expressão, pois após a multiplicação pelo escalar, haverá uma soma e, como visto anteriormente, só é possível somar matrizes se elas forem da mesma ordem!
+	
+	\begin{ceqn}
+		\begin{align*}
+		2\cdot\mathbb{A}+4\cdot\mathbb{B} & =\\
+		2\cdot\begin{bmatrix}1 & 3 & -5\\
+		2 & 6 & 4
+		\end{bmatrix}+4\cdot\begin{bmatrix}3 & 5 & 6\\
+		-2 & 4 & 10
+		\end{bmatrix} & =  \begin{bmatrix}2\cdot1 & 2\cdot3 & 2\cdot(-5)\\
+		2\cdot2 & 2\cdot6 & 2\cdot4
+		\end{bmatrix}+\begin{bmatrix}4\cdot3 & 4\cdot5 & 4\cdot6\\
+		4\cdot(-2) & 4\cdot4 & 4\cdot10
+		\end{bmatrix}\\
+		& =  \begin{bmatrix}2 & 6 & -10\\
+		4 & 12 & 8
+		\end{bmatrix}+\begin{bmatrix}12 & 20 & 24\\
+		-8 & 16 & 40
+		\end{bmatrix}\\
+		& =  \begin{bmatrix}2+12 & 6+20 & -10+24\\
+		4+(-8) & 12+16 & 8+40
+		\end{bmatrix}\\
+		& =  \begin{bmatrix}14 & 26 & 14\\
+		-4 & 28 & 48
+		\end{bmatrix}
+		\end{align*}
+	\end{ceqn}
+
+\end{example}
+
+
+\subsection{Multiplicação entre matrizes}
+
+Nesse momento é necessário fazer uma análise mais criteriosa sobre as matrizes. A multiplicação de matrizes NÃO é comutativa, ou seja,
+$\mathbb{A} \cdot \mathbb{B} \ne \mathbb{B} \cdot \mathbb{A}$. Outro ponto importante na multiplicação entre matrizes é que dada duas matrizes,
+o número de colunas da primeira deve ser igual ao número de linhas da segunda matriz. Assim, sejam as matrizes $\mathbb{A}_{i\mathrm{x}j}$
+e $\mathbb{B}_{n\mathrm{x}m}$, a multiplicação $\mathbb{A} \cdot \mathbb{B}$ existirá se, se somente se, $j=n$ e a multiplicação $\mathbb{B} \cdot \mathbb{A}$ existirá se, e somente se, $m=i$.
+\begin{example}
+	\video \, Calcule $\mathbb{A} \cdot \mathbb{B}$ para as matrizes abaixo:
+	
+	\begin{ceqn}
+		\begin{align*}
+			\mathbb{A}_{1\mathrm{x}3}=\begin{bmatrix}1 & 2 & 3\end{bmatrix}\quad\mathrm{e}\quad\mathbb{B}_{3\mathrm{x}2}=\begin{bmatrix}3 & 4\\
+		2 & 6\\
+		5 & 8
+		\end{bmatrix}
+		\end{align*}
+	\end{ceqn}
+
+	A primeira matriz é a matriz $\mathbb{A}$ e a segunda matriz é a $\mathbb{B}$. Analisando o número de linhas da primeira matriz e
+	o número de colunas da segunda matriz, verifica-se que são iguais a 3, logo, existe a multiplicação proposta no enunciado. Calculando-a:
+	
+	
+	\begin{ceqn}
+		\begin{align*}
+		\mathbb{A}_{1\mathrm{x}3}\cdot\mathbb{B}_{3\mathrm{x}2} & =\\
+		\begin{bmatrix}1 & 2 & 3\end{bmatrix}\cdot\begin{bmatrix}3 & 4\\
+		2 & 6\\
+		5 & 8
+		\end{bmatrix} & =  \begin{bmatrix}1\cdot3+2\cdot2+3\cdot5 & 1\cdot4+2\cdot6+3\cdot8\end{bmatrix}\\
+		& =  \begin{bmatrix}3+4+15 & 4+12+24\end{bmatrix}\\
+		& =  \begin{bmatrix}22 & 40\end{bmatrix}_{1\mathrm{x}2}
+		\end{align*}
+	\end{ceqn}
+	
+	é possível verificar que a matriz resultante possui a ordem $1\mathrm{x}2$ que é, exatamente, o número de linhas da primeira matriz e o número de colunas da segunda matriz.
+	
+\doutor \url{https://www.youtube.com/watch?v=VeP6FNgG9bg}
+\end{example}
+
+
+\begin{example}
+	\video \, Calcule a multiplicação $\mathbb{M} \cdot \mathbb{N}$ sendo
+	
+	\begin{ceqn}
+		\begin{align*}
+			\mathbb{M}_{2}=\begin{bmatrix}-3 & 6\\
+		2 & 7
+		\end{bmatrix}\quad\mathrm{e}\quad\mathbb{N}_{2}=\begin{bmatrix}2 & -1\\
+		4 & 3
+		\end{bmatrix}
+		\end{align*}
+	\end{ceqn}
+	
+	Como as matrizes são quadradas de ordem 2, é possível a multiplicação proposta no enunciado, logo
+	
+	\begin{ceqn}
+		\begin{align*}
+		\mathbb{M}\cdot\mathbb{N} & =  \begin{bmatrix}-3 & 6\\
+		2 & 7
+		\end{bmatrix}\cdot\begin{bmatrix}2 & -1\\
+		4 & 3
+		\end{bmatrix}\\
+		& = \begin{bmatrix}(-3)\cdot2+6\cdot4 & (-3)\cdot(-1)+6\cdot3\\
+		2\cdot2+7\cdot4 & 2\cdot(-1)+7\cdot3
+		\end{bmatrix}\\
+		& =  \begin{bmatrix}-6+24 & 3+18\\
+		4+28 & -2+21
+		\end{bmatrix}\\
+		& =  \begin{bmatrix}18 & 21\\
+		32 & 19
+		\end{bmatrix}
+		\end{align*}
+	\end{ceqn}
+	
+	é possível verificar que a ordem resultante da multiplicação entre matrizes quadradas é, também, uma matriz quadrada com a mesma ordem.
+	Outro ponto a se notar é que foi omitido o índice de ordem das matrizes na resolução pois, como são matrizes quadradas, não se faz necessário.
+	
+\doutor \url{https://www.youtube.com/watch?v=VeP6FNgG9bg}
+\end{example}
+
+
+\section{Tipos de matrizes}
+\begin{itemize}
+	\item \textit{\textbf{Matriz Linha}}: é a matriz que possui somente uma linha. É conhecida, também, como \textit{vetor linha} ou apenas \textit{\textbf{vetor}}; 
+	\item \textit{\textbf{Matriz Coluna}}: é a matriz que possui apenas uma coluna e também é conhecida como \textit{vetor coluna};
+	\item \textit{\textbf{Matriz Quadrada}}: como visto anteriormente, a matriz quadrada é aquela em que o número de linhas é igual ao número de colunas;
+	\begin{itemize}
+		\item \textit{Diagonal Principal}: a diagonal principal de uma matriz quadrada é aquela em que os elementos possuem os indicadores iguais, ou seja, $i=j \Rightarrow a_{ii}$;
+		\item \textit{Diagonal Secundária}: é a diagonal formada pelos elementos $a_{ij}$ de modo que $i+j=\textrm{ordem}+1$.
+		\item \textit{Triangular Superior}: matriz onde os elementos \textbf{acima} da diagonal principal e os da diagonal principal são diferentes de
+		zero, isto é, $a_{ij}=0 \, , \, i>j$;
+		\begin{ceqn}
+			\begin{align*}
+					\begin{bmatrix}1 & 2 & 3\\
+			0 & 5 & 1\\
+			0 & 0 & 2
+			\end{bmatrix}
+			\end{align*}
+		\end{ceqn}
+		\item \textit{Triangular Inferior}: matriz onde os elementos \textbf{abaixo} da diagonal principal e os da diagonal principal são diferentes de
+		zero, isto é, $a_{ij}=0 \, , \, i<j$
+		\begin{ceqn}
+			\begin{align*}
+			\begin{bmatrix}1 & 0 & 0\\
+			2 & 5 & 0\\
+			4 & 6 & 2
+			\end{bmatrix}
+			\end{align*}
+		\end{ceqn}
+		\item \textit{Diagonal}: matriz onde os elementos da diagonal principal são diferentes de zero, isto é, $a_{ij} \ne 0 \, ,\, i=j$.
+		\begin{ceqn}
+			\begin{align*}
+			\begin{bmatrix}1 & 0 & 0\\
+			0 & 5 & 0\\
+			0 & 0 & 2
+			\end{bmatrix}
+			\end{align*}
+		\end{ceqn}
+		\item \textit{Identidade}: matriz onde todos os elementos da diagonal principal são iguais a 1, ou seja, $a_{ij}=1\, ,\, i=j$. Essa matriz recebe uma representação peculiar, $\mathbb{I}_n$ ou apenas $\mathbb{I}$
+		\begin{ceqn}
+			\begin{align*}
+			\begin{bmatrix}1 & 0 & 0\\
+			0 & 1 & 0\\
+			0 & 0 & 1
+			\end{bmatrix}
+			\end{align*}
+		\end{ceqn}
+	\end{itemize}
+	\item \textit{\textbf{Matriz Oposta}}: dada uma matriz $\mathbb{A}$ e uma matriz $\mathbb{B}$, é possível dizer que a matriz $\mathbb{B}$
+	é oposta a matriz $\mathbb{A}$ se todos os elementos de $\mathbb{B}$ forem os elementos simétricos de $\mathbb{A}$
+	\begin{ceqn}
+		\begin{align*}
+		\mathbb{A}=\begin{bmatrix}1 & 10 & -7\\
+		2 & -1 & -8\\
+		3 & 5 & 9
+		\end{bmatrix}\quad\Rightarrow\quad\mathbb{B}=\begin{bmatrix}-1 & -10 & 7\\
+		-2 & 1 & 8\\
+		-3 & -5 & -9
+		\end{bmatrix}
+		\end{align*}
+	\end{ceqn}
+	\item \textit{\textbf{Matriz Transposta}}: dada uma matriz $\mathbb{A}$, a sua transposta, ou seja, $\mathbb{A}^t$ terá as suas colunas formadas
+	pelas linhas de $\mathbb{A}$. Vale ressaltar que $({\mathbb{A}^t})^t = \mathbb{A}$
+	\begin{ceqn}
+		\begin{align*}
+		\mathbb{A}=\begin{bmatrix}1 & 2 & 3\\
+		9 & 8 & 7
+		\end{bmatrix}\Rightarrow\mathbb{A}^{t}=\begin{bmatrix}1 & 9\\
+		2 & 8\\
+		3 & 7
+		\end{bmatrix}
+		\end{align*}
+	\end{ceqn}
+	\item \textit{\textbf{Matriz Simétrica}}: dada uma matriz $\mathbb{A}$, é possível dizer que $\mathbb{A}$ é simétrica se $\mathbb{A}=\mathbb{A}^t$.
+	\begin{ceqn}
+		\begin{align*}
+		\mathbb{A}=\begin{bmatrix}1 & 2 & 3\\
+		2 & -1 & 5\\
+		3 & 5 & 9
+		\end{bmatrix}\quad\Rightarrow\quad\mathbb{A}^{t}=\begin{bmatrix}1 & 2 & 3\\
+		2 & -1 & 5\\
+		3 & 5 & 9
+		\end{bmatrix}=\mathbb{A}
+		\end{align*}
+	\end{ceqn}
+	\item \textit{\textbf{Matriz Antissimétrica}}: dada uma matriz $\mathbb{A}$, é possível dizer que $\mathbb{A}$ é antissimétrica se $-\mathbb{A}=\mathbb{A}^t$. Aqui, se faz necessário mais uma observação: necessariamente $a_{ij}=0, \,i=j$.
+	\begin{ceqn}
+		\begin{align*}
+		\mathbb{A}=\begin{bmatrix}0 & 2 & -3\\
+		-2 & 0 & -5\\
+		3 & 5 & 0
+		\end{bmatrix}\quad\Rightarrow\quad\mathbb{A}^{t}=\begin{bmatrix}0 & -2 & 3\\
+		2 & 0 & 5\\
+		-3 & -5 & 0
+		\end{bmatrix}=-\mathbb{A}
+		\end{align*}
+	\end{ceqn}
+	\item \textit{\textbf{Matriz Nula}}: é uma matriz onde todos os elementos são iguais a $0$ (zero).
+	\begin{ceqn}
+		\begin{align*}
+		\mathbf{0}_{2\mathrm{x}4}=\begin{bmatrix}0 & 0 & 0 & 0\\
+		0 & 0 & 0 & 0
+		\end{bmatrix},\quad\mathbf{0}_{2}=\begin{bmatrix}0 & 0\\
+		0 & 0
+		\end{bmatrix},\quad\mathbf{0}_{3}=\begin{bmatrix}0 & 0 & 0\\
+		0 & 0 & 0\\
+		0 & 0 & 0
+		\end{bmatrix}
+		\end{align*}
+	\end{ceqn}
+	\item \textit{\textbf{Matriz Ortogonal}}: dada uma matriz $\mathbb{A}$, \textit{inversível}, ela será ortogonal se obedecer $\mathbb{A}^t = \mathbb{A}^{-1}$.\footnote{Será visto mais adiante como calcular a inversa de uma matriz, no entanto, a ideia é partir de uma equação matricial. Dadas as matrizes $\mathbb{A}, \mathbb{X}$ e a matriz identidade $\mathbb{I}$. A equação base é $\mathbb{A}\cdot \mathbb{X} = \mathbb{I}$ e o objetivo é determinar a matriz $\mathbb{X}$. O leitor habituado com os métodos tradicionais poderia imaginar que para resolver essa equação bastaria \textit{passar a matriz $\mathbb{A}$ dividindo}, no entanto, não existe divisão de matrizes, muito menos \textit{passa para lá}. O correto é determinar uma matriz de modo que a multiplicação dela por sua inversa, resulte no elemento neutro da multiplicação entre matrizes; o elemento neutro da multiplicação entre matrizes é a matriz identidade!}
+	\begin{ceqn}
+		\begin{align*}
+		\mathbb{A}=\begin{bmatrix}\frac{1}{2} & -\frac{\sqrt{3}}{2}\\
+		\frac{\sqrt{3}}{2} & \frac{1}{2}
+		\end{bmatrix}\quad\mathbb{A}^{t}=\begin{bmatrix}\frac{1}{2} & \frac{\sqrt{3}}{2}\\
+		-\frac{\sqrt{3}}{2} & \frac{1}{2}
+		\end{bmatrix}\Rightarrow\mathbb{A}\cdot\mathbb{A}^{t}=\begin{bmatrix}1 & 0\\
+		0 & 1
+		\end{bmatrix}
+		\end{align*}
+	\end{ceqn}
+\end{itemize}
+

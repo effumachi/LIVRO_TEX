@@ -1,0 +1,97 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, left=20mm, top=15mm, right=20mm, bottom=15mm]{geometry}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amsmath} 
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+\newcommand{\resposta}{\hfill\makebox[0pt][r]{\scriptsize\textit{Resposta:\rule{5cm}{.1pt}}}\\ \vspace{.1cm}}
+\newcommand{\um}{(1,0 ponto) }
+\newcommand{\dois}{(2,0 pontos) }
+\newcommand{\tres}{(3,0 pontos) }
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}\textbf{\Large{Revisão Álgebra Linear}}\end{center}
+\begin{center}\textbf{\Large{Prof. Dr. Fumachi}}\end{center}
+\begin{center}\textbf{\Large{01/10/2019}}\end{center}
+
+\textbf{{Questões}}
+
+\vspace{0.25 cm}
+\noindent 1. Determine $x$ e $y$ de modo que as matrizes abaixo sejam iguais:
+\begin{equation*}\label{key}
+\mathbb{A} = \left[ \begin{matrix} 1&2 \\ 4&x+5 \end{matrix} \right] \qquad \mathbb{B} = \left[ \begin{matrix} y-3&2 \\ 4&10 \end{matrix} \right]
+\end{equation*}
+
+%-------------------------------------
+\noindent 2. Calcule $\mathbb{A} \cdot \mathbb{B}$ sendo $\mathbb{A} = \left[ \begin{matrix} 1&2 \\ 4&2 \end{matrix} \right]$ e $\mathbb{B} = \left[ \begin{matrix} 0&2 \\ 3&1 \end{matrix} \right]$
+
+%--------------------------------------
+%-------------------------------------
+\noindent 3. Calcule $2 \mathbb{A} +3 \mathbb{B}$ sendo $\mathbb{A} = \left[ \begin{matrix} -1&0 \\ 1&2 \end{matrix} \right]$ e $\mathbb{B} = \left[ \begin{matrix} 0&2 \\ 1&-1 \end{matrix} \right]$
+
+%--------------------------------------
+%-------------------------------------
+\noindent 4. Calcule $\mathbb{A} - \mathbb{B}$ sendo $\mathbb{A} = \left[ \begin{matrix} 4&5 \\ 0&2 \end{matrix} \right]$ e $\mathbb{B} = \left[ \begin{matrix} 0&2 \\ 3&1 \end{matrix} \right]$
+
+%--------------------------------------
+%-------------------------------------
+\noindent 5. Calcule $\mathrm{det}(\mathbb{A})$ sendo $\mathbb{A} = \left[ \begin{matrix} 1&2 \\ 4&2 \end{matrix} \right]$.
+
+%--------------------------------------
+%-------------------------------------
+\noindent 6. Calcule $\mathrm{det}(\mathbb{A})$ sendo $\mathbb{A} = \left[ \begin{matrix} 1&2&3 \\ 4&2&1 \\ -1&2&0 \end{matrix} \right]$.
+
+%--------------------------------------
+%-------------------------------------
+\noindent 7. Calcule $\mathrm{det}(\mathbb{A})$ sendo $\mathbb{A} = \left[ \begin{matrix} 1&3&0&1 \\ 4&2&0&0 \\ -1&3&0&1 \\ 4&3&2&0 \end{matrix} \right]$.
+
+%--------------------------------------
+%-------------------------------------
+\noindent 8. Calcule a área da figura abaixo:
+
+\begin{tikzpicture}[scale=1.0]
+		% Estilos
+		\tikzstyle {every pin} = [ rectangle, rounded corners=1pt, font=\large ]
+		\begin{axis}
+		[
+		grid, grid style=dashed,
+		grid = both,
+		ymin=-.5,ymax=6.2,
+		xmin=-.5,xmax=6.2,
+		%xlabel=$x$,
+		%ylabel=$f(x)$,
+		width=10cm,
+		axis on top=true,
+		axis x line=middle,
+		axis y line=middle,
+		%transpose legend,
+		%legend columns = 1,
+		%legend style = {at={0.5,-.1},anchor=north}
+		legend pos= north east, %outer
+		]
+		%\draw[blue, very thick] (50,50) rectangle (550,550);
+		\path[draw, fill=gray!20, very thick] (50,50) rectangle (550,550);
+		%\draw[orange, ultra thick] (150,150) -- (450,150) -- (150,450) -- cycle;
+		\path[draw, fill=white!10, ultra thick] (150,150) -- (450,150) -- (150,450) -- cycle;
+		% Desenha a função
+		%\addplot [blue,line width = 1, smooth, domain=-1:3] {2*x +1}; %\addlegendentry{x}
+		
+		% Pontos de interesse
+		\node [fill=none, circle, scale=0.75, pin=45:{$A_h$}] at (axis cs: 3.5,3.5) {};
+		%\node [fill=red, circle, scale=0.5, pin=180:{$(0,1)$}] at (axis cs: 0,1) {};
+		%\node [fill=blue, circle, scale=0.1, pin=135:{$f(x)=2x+1$}] at (axis cs: 2.75,6.5) {};
+		%\legend {$f(x)=2x+1$}
+		\end{axis}
+\end{tikzpicture}
+
+%--------------------------------------
+
+
+\par\noindent\rule{\textwidth}{1pt}
+
+\end{document}

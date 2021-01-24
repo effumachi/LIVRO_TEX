@@ -1,0 +1,571 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{barbosa2017}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=097e5015810e66d68f8cc0a0aeeb3217}{%
+           family={Barbosa},
+           familyi={B\bibinitperiod},
+           given={Marcos\bibnamedelima Antonio},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Curitiba}%
+      }
+      \list{publisher}{1}{%
+        {Intersaberes}%
+      }
+      \strng{namehash}{097e5015810e66d68f8cc0a0aeeb3217}
+      \strng{fullhash}{097e5015810e66d68f8cc0a0aeeb3217}
+      \strng{bibnamehash}{097e5015810e66d68f8cc0a0aeeb3217}
+      \strng{authorbibnamehash}{097e5015810e66d68f8cc0a0aeeb3217}
+      \strng{authornamehash}{097e5015810e66d68f8cc0a0aeeb3217}
+      \strng{authorfullhash}{097e5015810e66d68f8cc0a0aeeb3217}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introdução lógica matemática para acadêmicos}
+      \field{year}{2017}
+    \endentry
+    \entry{boldrini1986}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2e1796863a581edda36fcd59932ccd46}{%
+           family={Boldrini},
+           familyi={B\bibinitperiod},
+           given={José\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {São Paulo}%
+      }
+      \list{publisher}{1}{%
+        {HARBRA}%
+      }
+      \strng{namehash}{2e1796863a581edda36fcd59932ccd46}
+      \strng{fullhash}{2e1796863a581edda36fcd59932ccd46}
+      \strng{bibnamehash}{2e1796863a581edda36fcd59932ccd46}
+      \strng{authorbibnamehash}{2e1796863a581edda36fcd59932ccd46}
+      \strng{authornamehash}{2e1796863a581edda36fcd59932ccd46}
+      \strng{authorfullhash}{2e1796863a581edda36fcd59932ccd46}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9788529402024}
+      \field{title}{Álgebra linear}
+      \field{year}{1986}
+    \endentry
+    \entry{bonafini2011}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=03ed8afbfb15b0821f84ec4c9860b9e4}{%
+           family={Bonafini},
+           familyi={B\bibinitperiod},
+           given={Fernanda\bibnamedelima Cesar},
+           giveni={F\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {São Paulo}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall}%
+      }
+      \strng{namehash}{03ed8afbfb15b0821f84ec4c9860b9e4}
+      \strng{fullhash}{03ed8afbfb15b0821f84ec4c9860b9e4}
+      \strng{bibnamehash}{03ed8afbfb15b0821f84ec4c9860b9e4}
+      \strng{authorbibnamehash}{03ed8afbfb15b0821f84ec4c9860b9e4}
+      \strng{authornamehash}{03ed8afbfb15b0821f84ec4c9860b9e4}
+      \strng{authorfullhash}{03ed8afbfb15b0821f84ec4c9860b9e4}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Matemática}
+      \field{year}{2011}
+    \endentry
+    \entry{castanheira2017}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3e03b9e670b44de9b7b1c698c63126ed}{%
+           family={Castanheira},
+           familyi={C\bibinitperiod},
+           given={Nelson\bibnamedelima Pereira},
+           giveni={N\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e09bfc0da188d7ba0ece1efdf5568888}{%
+           family={Leite},
+           familyi={L\bibinitperiod},
+           given={Álvaro\bibnamedelima Emílio},
+           giveni={Á\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Curitiba}%
+      }
+      \list{publisher}{1}{%
+        {Intersaberes}%
+      }
+      \strng{namehash}{38f9044aa7164c40ff79424e8302c7dd}
+      \strng{fullhash}{38f9044aa7164c40ff79424e8302c7dd}
+      \strng{bibnamehash}{38f9044aa7164c40ff79424e8302c7dd}
+      \strng{authorbibnamehash}{38f9044aa7164c40ff79424e8302c7dd}
+      \strng{authornamehash}{38f9044aa7164c40ff79424e8302c7dd}
+      \strng{authorfullhash}{38f9044aa7164c40ff79424e8302c7dd}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Tópicos de Cálculo I: limites, derivadas e integrais}
+      \field{year}{2017}
+    \endentry
+    \entry{domingues2018}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a3ac6317f3e9e8bb40b80864717b0ee8}{%
+           family={Domingues},
+           familyi={D\bibinitperiod},
+           given={Hygino\bibnamedelima H.},
+           giveni={H\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c4e2ec96af71db0f52921da19028f585}{%
+           family={Iezzi},
+           familyi={I\bibinitperiod},
+           given={Gelson},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Rio de Janeiro}%
+      }
+      \list{publisher}{1}{%
+        {Saraiva}%
+      }
+      \strng{namehash}{db9c47822ede66577586cb58496ad975}
+      \strng{fullhash}{db9c47822ede66577586cb58496ad975}
+      \strng{bibnamehash}{db9c47822ede66577586cb58496ad975}
+      \strng{authorbibnamehash}{db9c47822ede66577586cb58496ad975}
+      \strng{authornamehash}{db9c47822ede66577586cb58496ad975}
+      \strng{authorfullhash}{db9c47822ede66577586cb58496ad975}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-85-472-2305-2}
+      \field{title}{Álgebra moderna}
+      \field{year}{2018}
+    \endentry
+    \entry{fernandes2017}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=61f459058f210349f538d133a5e42d44}{%
+           family={Fernandes},
+           familyi={F\bibinitperiod},
+           given={Luana\bibnamedelimb Fonseca\bibnamedelima Duarte},
+           giveni={L\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Curitiba}%
+      }
+      \list{publisher}{1}{%
+        {Intersaberes}%
+      }
+      \strng{namehash}{61f459058f210349f538d133a5e42d44}
+      \strng{fullhash}{61f459058f210349f538d133a5e42d44}
+      \strng{bibnamehash}{61f459058f210349f538d133a5e42d44}
+      \strng{authorbibnamehash}{61f459058f210349f538d133a5e42d44}
+      \strng{authornamehash}{61f459058f210349f538d133a5e42d44}
+      \strng{authorfullhash}{61f459058f210349f538d133a5e42d44}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{isbn}{978-85-5972-341-0}
+      \field{title}{Álgebra linear}
+      \field{year}{2017}
+    \endentry
+    \entry{flemming2007}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=decb162a793dd0356dd6163ed1410fe6}{%
+           family={Flemming},
+           familyi={F\bibinitperiod},
+           given={Diva\bibnamedelima Marília},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=80ab86d960c7ffd6c31274db374439c0}{%
+           family={Gonçalves},
+           familyi={G\bibinitperiod},
+           given={Mirian\bibnamedelima Buss},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {São Paulo}%
+      }
+      \list{publisher}{1}{%
+        {Pearson Prentice Hall}%
+      }
+      \strng{namehash}{344bc80890a1688ca1b43b86474c37b0}
+      \strng{fullhash}{344bc80890a1688ca1b43b86474c37b0}
+      \strng{bibnamehash}{344bc80890a1688ca1b43b86474c37b0}
+      \strng{authorbibnamehash}{344bc80890a1688ca1b43b86474c37b0}
+      \strng{authornamehash}{344bc80890a1688ca1b43b86474c37b0}
+      \strng{authorfullhash}{344bc80890a1688ca1b43b86474c37b0}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Cálculo a funções: limite, derivação e integração}
+      \field{year}{2007}
+    \endentry
+    \entry{franco2016}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=45444660e799409efeae25cdb05fb600}{%
+           family={Franco},
+           familyi={F\bibinitperiod},
+           given={Neide},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {São Paulo}%
+      }
+      \list{publisher}{1}{%
+        {Pearson Education do Brasil}%
+      }
+      \strng{namehash}{45444660e799409efeae25cdb05fb600}
+      \strng{fullhash}{45444660e799409efeae25cdb05fb600}
+      \strng{bibnamehash}{45444660e799409efeae25cdb05fb600}
+      \strng{authorbibnamehash}{45444660e799409efeae25cdb05fb600}
+      \strng{authornamehash}{45444660e799409efeae25cdb05fb600}
+      \strng{authorfullhash}{45444660e799409efeae25cdb05fb600}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-85-430-1915-4}
+      \field{title}{Álgebra linear}
+      \field{year}{2016}
+    \endentry
+    \entry{hoffmann2008}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3a94c9d967393462c87fd4fc094a50df}{%
+           family={Hoffmann},
+           familyi={H\bibinitperiod},
+           given={Laurence\bibnamedelima D.},
+           giveni={L\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=168175dca50a318b16bbe1855f95e211}{%
+           family={Bradley},
+           familyi={B\bibinitperiod},
+           given={Gerald\bibnamedelima L.},
+           giveni={G\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Rio de Janeiro}%
+      }
+      \list{publisher}{1}{%
+        {LTC}%
+      }
+      \strng{namehash}{6bdc5e29e10b5f64d5dc75b50d8567b1}
+      \strng{fullhash}{6bdc5e29e10b5f64d5dc75b50d8567b1}
+      \strng{bibnamehash}{6bdc5e29e10b5f64d5dc75b50d8567b1}
+      \strng{authorbibnamehash}{6bdc5e29e10b5f64d5dc75b50d8567b1}
+      \strng{authornamehash}{6bdc5e29e10b5f64d5dc75b50d8567b1}
+      \strng{authorfullhash}{6bdc5e29e10b5f64d5dc75b50d8567b1}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Cálculo: um curso moderno e suas aplicações}
+      \field{year}{2008}
+    \endentry
+    \entry{jacques2010}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=66f946c64b132e195bd7ac4ceac4e78e}{%
+           family={Jacques},
+           familyi={J\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {São Paulo}%
+      }
+      \list{publisher}{1}{%
+        {Pearson Prentice Hall}%
+      }
+      \strng{namehash}{66f946c64b132e195bd7ac4ceac4e78e}
+      \strng{fullhash}{66f946c64b132e195bd7ac4ceac4e78e}
+      \strng{bibnamehash}{66f946c64b132e195bd7ac4ceac4e78e}
+      \strng{authorbibnamehash}{66f946c64b132e195bd7ac4ceac4e78e}
+      \strng{authornamehash}{66f946c64b132e195bd7ac4ceac4e78e}
+      \strng{authorfullhash}{66f946c64b132e195bd7ac4ceac4e78e}
+      \field{sortinit}{J}
+      \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Matemática para Economia e Administração}
+      \field{year}{2010}
+    \endentry
+    \entry{munaretto2018}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5530572e1d5085cf7629a0ab083b5f8b}{%
+           family={Munaretto},
+           familyi={M\bibinitperiod},
+           given={Ana\bibnamedelima Cristina},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Curitiba}%
+      }
+      \list{publisher}{1}{%
+        {Intersaberes}%
+      }
+      \strng{namehash}{5530572e1d5085cf7629a0ab083b5f8b}
+      \strng{fullhash}{5530572e1d5085cf7629a0ab083b5f8b}
+      \strng{bibnamehash}{5530572e1d5085cf7629a0ab083b5f8b}
+      \strng{authorbibnamehash}{5530572e1d5085cf7629a0ab083b5f8b}
+      \strng{authornamehash}{5530572e1d5085cf7629a0ab083b5f8b}
+      \strng{authorfullhash}{5530572e1d5085cf7629a0ab083b5f8b}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Descomplicando um novo olhar sobre a matemática elementar}
+      \field{year}{2018}
+    \endentry
+    \entry{murolo2011}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ab735d116bcc011f824c974688c8f336}{%
+           family={Murolo},
+           familyi={M\bibinitperiod},
+           given={Afrânio},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=358b14ae506883135dd2c6273a68ad2d}{%
+           family={Bonetto},
+           familyi={B\bibinitperiod},
+           given={Giacomo},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {São Paulo}%
+      }
+      \list{publisher}{1}{%
+        {Thompson Pioneira}%
+      }
+      \strng{namehash}{d2d28e066f6d6fe6ebc858a2213713ff}
+      \strng{fullhash}{d2d28e066f6d6fe6ebc858a2213713ff}
+      \strng{bibnamehash}{d2d28e066f6d6fe6ebc858a2213713ff}
+      \strng{authorbibnamehash}{d2d28e066f6d6fe6ebc858a2213713ff}
+      \strng{authornamehash}{d2d28e066f6d6fe6ebc858a2213713ff}
+      \strng{authorfullhash}{d2d28e066f6d6fe6ebc858a2213713ff}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Matemática aplicada a Administração, Economia e Contabilidade}
+      \field{year}{2011}
+    \endentry
+    \entry{oliveira2016}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b28169d2402f5e3cdfabaf563693ba14}{%
+           family={Oliveira},
+           familyi={O\bibinitperiod},
+           given={Carlos\bibnamedelimb Alberto\bibnamedelimb Maziozeki\bibnamedelima de},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim d\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Curitiba}%
+      }
+      \list{publisher}{1}{%
+        {Intersaberes}%
+      }
+      \strng{namehash}{b28169d2402f5e3cdfabaf563693ba14}
+      \strng{fullhash}{b28169d2402f5e3cdfabaf563693ba14}
+      \strng{bibnamehash}{b28169d2402f5e3cdfabaf563693ba14}
+      \strng{authorbibnamehash}{b28169d2402f5e3cdfabaf563693ba14}
+      \strng{authornamehash}{b28169d2402f5e3cdfabaf563693ba14}
+      \strng{authorfullhash}{b28169d2402f5e3cdfabaf563693ba14}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Matemática}
+      \field{year}{2016}
+    \endentry
+    \entry{panonceli2017}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9057b401c5ad05b483165962531010c6}{%
+           family={Panonceli},
+           familyi={P\bibinitperiod},
+           given={Diego\bibnamedelima Manoel},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Curitiba}%
+      }
+      \list{publisher}{1}{%
+        {Intersaberes}%
+      }
+      \strng{namehash}{9057b401c5ad05b483165962531010c6}
+      \strng{fullhash}{9057b401c5ad05b483165962531010c6}
+      \strng{bibnamehash}{9057b401c5ad05b483165962531010c6}
+      \strng{authorbibnamehash}{9057b401c5ad05b483165962531010c6}
+      \strng{authornamehash}{9057b401c5ad05b483165962531010c6}
+      \strng{authorfullhash}{9057b401c5ad05b483165962531010c6}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Análise Matemática}
+      \field{year}{2017}
+    \endentry
+    \entry{souza2018}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=55f484a89e11d58c6f7a99123cb5ef1f}{%
+           family={Souza},
+           familyi={S\bibinitperiod},
+           given={Jeferson\bibnamedelimb Afonso\bibnamedelima Lopes},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {São Paulo}%
+      }
+      \list{publisher}{1}{%
+        {Pearson Prentice Hall}%
+      }
+      \strng{namehash}{55f484a89e11d58c6f7a99123cb5ef1f}
+      \strng{fullhash}{55f484a89e11d58c6f7a99123cb5ef1f}
+      \strng{bibnamehash}{55f484a89e11d58c6f7a99123cb5ef1f}
+      \strng{authorbibnamehash}{55f484a89e11d58c6f7a99123cb5ef1f}
+      \strng{authornamehash}{55f484a89e11d58c6f7a99123cb5ef1f}
+      \strng{authorfullhash}{55f484a89e11d58c6f7a99123cb5ef1f}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lógica Matemática}
+      \field{year}{2018}
+    \endentry
+    \entry{steinbruch2009}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=97c2cad3ca84024f2590331196b8c15d}{%
+           family={Steinbruch},
+           familyi={S\bibinitperiod},
+           given={Alfredo},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {São Paulo}%
+      }
+      \list{publisher}{1}{%
+        {Pearson Makron Books}%
+      }
+      \strng{namehash}{97c2cad3ca84024f2590331196b8c15d}
+      \strng{fullhash}{97c2cad3ca84024f2590331196b8c15d}
+      \strng{bibnamehash}{97c2cad3ca84024f2590331196b8c15d}
+      \strng{authorbibnamehash}{97c2cad3ca84024f2590331196b8c15d}
+      \strng{authornamehash}{97c2cad3ca84024f2590331196b8c15d}
+      \strng{authorfullhash}{97c2cad3ca84024f2590331196b8c15d}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0074504126}
+      \field{title}{Álgebra linear}
+      \field{year}{2009}
+    \endentry
+    \entry{tan2008}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=32547c65978dde42b219223b5fa3397a}{%
+           family={Tan},
+           familyi={T\bibinitperiod},
+           given={S.\bibnamedelimi T.},
+           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {São Paulo}%
+      }
+      \list{publisher}{1}{%
+        {Cengage Learning}%
+      }
+      \strng{namehash}{32547c65978dde42b219223b5fa3397a}
+      \strng{fullhash}{32547c65978dde42b219223b5fa3397a}
+      \strng{bibnamehash}{32547c65978dde42b219223b5fa3397a}
+      \strng{authorbibnamehash}{32547c65978dde42b219223b5fa3397a}
+      \strng{authornamehash}{32547c65978dde42b219223b5fa3397a}
+      \strng{authorfullhash}{32547c65978dde42b219223b5fa3397a}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Matemática aplicada a administração e economia}
+      \field{year}{2008}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

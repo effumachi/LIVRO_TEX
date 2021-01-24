@@ -1,1 +1,38 @@
-A
+\documentclass[11pt,fleqn]{book} % Default font size and left-justified equations
+
+\input{structure.tex} % Insert the commands.tex file which contains the majority of the structure behind the template
+
+%\hypersetup{pdftitle={Title},pdfauthor={Author}} % Uncomment and fill out to include PDF metadata for the author and title of the book
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\input{titulo.tex}
+\input{copyright.tex}
+\input{sobre.tex}
+\input{prefacio.tex}
+\input{sumario.tex}
+%\part{Funções}						% <- Matemática
+%\input{conjuntos_numericos.tex}
+%\input{funcoes.tex}
+%\input{ex_funcoes.tex}
+%\part{Cálculo}				% Cálculo
+%\input{limites.tex}
+%\input{derivadas.tex}
+%\input{integrais.tex}
+\part{Álgebra Linear}						% <- Álgebra Linear
+\input{matrizes.tex}
+\input{determinantes.tex}
+\input{sistemas_lineares.tex}
+\input{ex_algebra.tex}
+%\part{Análise Matemática}
+%\input{analise.tex}
+%\part{Física}
+%\input{fisica1.tex}
+%\part{Tecnologia e Educação}
+%\input{educacao.tex}
+%\input{introducao_python.tex}
+%\part{Bibliografia}						% <- Bibliografia
+%\input{bibliografia.tex}
+%\input{remissivo.tex}
+\end{document}

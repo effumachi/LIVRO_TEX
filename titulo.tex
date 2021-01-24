@@ -1,0 +1,15 @@
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begingroup
+\thispagestyle{empty} % Suppress headers and footers on the title page
+\begin{tikzpicture}[remember picture,overlay]
+\node[inner sep=0pt] (background) at (current page.center) {\includegraphics[width=\paperwidth]{background.pdf}};
+\draw (current page.center) node [fill=blue!30!white,fill opacity=0.6,text opacity=1,inner %sep=1cm]{\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}{\centering Álgebra Linear\\[15pt] % Book title
+sep=1cm]{\Huge\centering\bfseries\parbox[c][][t]{\paperwidth}{\centering Curso de Matemática e Tecnologia\\[15pt] % Book title
+%{\Large A Profound Subtitle}\\[20pt] % Subtitle
+{\huge Prof. Dr. Edson F. Fumachi}}}; % Author name
+\end{tikzpicture}
+\vfill
+\endgroup

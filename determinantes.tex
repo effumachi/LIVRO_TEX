@@ -1,0 +1,221 @@
+%----------------------------------------------------------------------------------------
+%	CHAPTER 2
+%----------------------------------------------------------------------------------------
+\chapterimage{chapter_head_2.pdf} % Chapter heading image
+
+\chapter{Determinantes}
+\section{Determinantes}\index{Determinantes}
+
+\subsection{Ordem 2}
+
+Os determinantes de matrizes de ordem 2 podem ser calculadas como
+segue. Considere a matriz $\mathbb{A}$
+
+$$
+\mathbb{A}=\begin{bmatrix}a_{11} & a_{12}\\
+a_{21} & a_{22}
+\end{bmatrix}\Rightarrow\mathrm{det(\mathbb{A})}=\overbrace{a_{11}\cdot a_{22}}^{\mathrm{diagonal\:principal}}-\underbrace{a_{12}\cdot a_{21}}_{\mathrm{diagonal\:secund\acute{a}ria}}
+$$
+
+\begin{example}
+	\video \, Calcule o determinante de $\mathbb{A}=\begin{bmatrix}1 & 2\\
+	3 & 4
+	\end{bmatrix}$
+
+
+	O determinante pode ser calculado usando o exposto acima, assim:
+	
+	$$
+	\mathbb{A}=\begin{bmatrix}1 & 2\\
+	3 & 4
+	\end{bmatrix}\Rightarrow\mathrm{det(\mathbb{A})}=1\cdot4-2\cdot3=4-6=-2
+	$$
+	
+	
+\doutor \url{https://www.youtube.com/watch?v=tEotRUk9RDo}
+\end{example}
+\begin{example}
+	\video \, Calcule o determinante de $\mathbb{B}=\begin{bmatrix}-1 & -2\\
+	-7 & 4
+	\end{bmatrix}$
+
+
+	De modo análogo ao exemplo anterior, tem-se:
+	
+	$$
+	\mathbb{B}=\begin{bmatrix}-1 & -2\\
+	-7 & 4
+	\end{bmatrix}\Rightarrow\mathrm{det(\mathbb{B})}=(-1)\cdot4-(-2)\cdot(-7)=-4-(+14)=-4-14=-18
+	$$
+	
+	
+\doutor \url{https://www.youtube.com/watch?v=tEotRUk9RDo}
+\end{example}
+
+\subsection{Ordem 3}
+
+Considere uma matriz de ordem 3. O cálculo do determinante será:
+
+\begin{ceqn}
+	\begin{align*}
+	\mathbb{A}=\begin{bmatrix}a_{11} & a_{12} & a_{13}\\
+	a_{21} & a_{22} & a_{23}\\
+	a_{31} & a_{32} & a_{33}
+	\end{bmatrix}\Rightarrow
+	\begin{split}
+	\mathrm{det(\mathbb{A})}&=\overbrace{a_{11}\cdot a_{22}\cdot a_{33}+a_{12}\cdot a_{23}\cdot a_{31}+a_{13}\cdot a_{21}\cdot a_{32}}^{\mathrm{diagonais\,\,\,principais}}\\
+	& \quad \underbrace{-a_{13}\cdot a_{22}\cdot a_{31}-a_{11}\cdot a_{23}\cdot a_{32}-a_{12}\cdot a_{21}\cdot a_{33}}_{\mathrm{diagonais\,\,\,secund\acute{a}rias}}
+	\end{split}
+	\end{align*}
+\end{ceqn}
+
+
+Torna-se um pouco complicado calcular o determinante através da memorização da relação acima, um modo, repetitivo, mais fácil será visto no exemplo a seguir.
+\begin{example}
+	\video \, Calcule o determinante da matriz $\mathbb{A}=\begin{bmatrix}1 & 2 & 3\\
+	4 & 5 & 6\\
+	2 & 1 & 3
+	\end{bmatrix}$
+
+
+	Para resolver, basta copiar as duas primeiras colunas, após a matriz, e seguir um processo análogo ao cálculo do determinante das matrizes
+	de ordem 2, multiplicando as \textit{"diagonais principais"} e \textbf{subtraindo} a multiplicação das \textit{"diagonais secundárias"}. Essa técnica é conhecida como \textit{Regra de Sarrus}!
+	
+	\begin{ceqn}
+		\begin{align*}
+		\mathbb{A}=\begin{bmatrix}{\color{red}1} & {\color{violet}2} & 3\\
+		{\color{red}4} & {\color{violet}5} & 6\\
+		{\color{red}2} & {\color{violet}1} & 3
+		\end{bmatrix}\begin{array}{cc}
+		{\color{red}1} & {\color{violet}2}\\
+		{\color{red}4} & {\color{violet}5}\\
+		{\color{red}2} & {\color{violet}1}
+		\end{array}\Rightarrow\mathrm{det(\mathbb{A})} & =  \overbrace{1\cdot5\cdot3+2\cdot6\cdot2+3\cdot4\cdot1}^{\mathrm{diagonais\:principais}}-\underbrace{(3\cdot5\cdot2+1\cdot6\cdot1+2\cdot4\cdot3)}_{\mathrm{diagonais\:secund\acute{a}rias}}\\
+		& =  15+24+12-(30+6+24)\\
+		& =  51-60\\
+		& =  -9
+		\end{align*}
+	\end{ceqn}
+	
+\doutor \url{https://www.youtube.com/watch?v=zl99h_aiWds}
+\end{example}
+
+\subsection{Ordem superior a 3}
+\begin{theorem}[Teorema de Laplace]
+	O determinante de uma matriz é igual a soma dos produtos dos elementos de qualquer linha ou coluna pelos respectivos complementos algébricos.
+$$
+\mathrm{det(\mathbb{A})}=\sum_{j=1}^{^{n}}(-1)^{i+j}\cdot a_{ij}\cdot\mathrm{det(\mathbb{A}_{-i-j})}
+$$
+sendo:
+\begin{itemize}
+	\item $n$ a ordem da matriz;
+	\item $i\,\mathrm{e}\,j$ são os índices que representam a linha e coluna,
+	respectivamente;
+	\item $a_{ij}$ é o elemento da \textit{i-ésima} linha e \textit{j-ésima}
+	coluna;
+	\item $\mathrm{det}(\mathbb{A}_{-i-j})$ é o determinante da matriz formada
+	pela \textbf{remoção} da \textit{linha i} e \textit{coluna j}.
+\end{itemize}
+\end{theorem}
+
+O teorema anterior é o Teorema de Laplace que estabelece um modo de calcular os determinantes de matrizes de ordem $n$. Note que a aplicação
+desse teorema serve, também, para matrizes de ordem 2 ou 3.
+
+
+\begin{example}
+	\video \, Calcule o determinante da matriz $\mathbb{A}=\begin{bmatrix}1 & 2 & 3\\
+	4 & 5 & 6\\
+	2 & 1 & 3
+	\end{bmatrix}$
+
+
+	A matriz é de ordem 3 ($n=3$). Inicialmente é necessário escolher 	uma linha qualquer da matriz. Suponha a escolha da linha 1 ($i=1$).
+	A linha 1 possui os elementos $a_{11}, a_{12}\, \mathrm{e}\,a_{13}$.
+	Assim o determinante ficará:
+	
+	\begin{eqnarray*}
+		\begin{split}
+		\mathrm{det(\mathbb{A})} & = \sum_{j=1}^{n}(-1)^{i+j}\cdot a_{ij}\cdot\mathrm{det(\mathbb{A}_{-i-j})}\\
+		& =  \sum_{j=1}^{3}(-1)^{1+j}\cdot a_{1j}\cdot\mathrm{det(\mathbb{A}_{-1-j})}\\
+		& =  (-1)^{1+1}\cdot a_{11}\cdot\mathrm{det}(\begin{bmatrix}a_{22} & a_{23}\\
+			a_{32} & a_{33}
+		\end{bmatrix})+(-1)^{1+2}\cdot a_{12}\cdot\mathrm{det}(\begin{bmatrix}a_{21} & a_{23}\\
+			a_{31} & a_{33}
+		\end{bmatrix})\\
+	& \quad+(-1)^{1+3}\cdot a_{13}\cdot\mathrm{det}(\begin{bmatrix}a_{21} & a_{22}\\
+			a_{31} & a_{32}
+		\end{bmatrix})\\
+		& =  (-1)^{2}\cdot1\cdot\mathrm{det}(\begin{bmatrix}5 & 6\\
+			1 & 3
+		\end{bmatrix})+(-1)^{3}\cdot2\cdot\mathrm{det}(\begin{bmatrix}4 & 6\\
+			2 & 3
+		\end{bmatrix})\\
+	& \quad+(-1)^{4}\cdot3\cdot\mathrm{det}(\begin{bmatrix}4 & 5\\
+			2 & 1
+		\end{bmatrix})\\
+		& =  1\cdot1\cdot(5\cdot3-6\cdot1)-1\cdot2\cdot(4\cdot3-6\cdot2)+1\cdot3\cdot(4\cdot1-5\cdot2)\\
+		& =  1\cdot(15-6)-2\cdot(12-12)+3\cdot(4-10)\\
+		& =  1\cdot9-2\cdot0+3\cdot(-6)\\
+		& =  9-0-18\\
+		& =  9-18\\
+		& =  -9
+		\end{split}
+	\end{eqnarray*}
+
+
+\doutor \url{https://www.youtube.com/watch?v=WHPNHxdKDyg}
+\end{example}
+
+O resultado obtido é o mesmo calculado utilizando a \textit{regra de Sarrus} para matrizes de ordem 3. Comparando os dois exemplos, o leitor concluirá (facilmente!) que é muito simples, e rápido, calcular o determinante pela regra mencionada. No entanto, a regra de Sarrus pode ser utilizada para matrizes de ordem 3, ou seja, para matrizes de ordem maior (4, 5, 6, ...) o método é o utilizado nesta seção\footnote{Existem outros métodos e não serão abordados neste material. O leitor pode facilmente encontrar fazendo buscas na internet e em livros.}.
+
+\subsection{Regra do Cadarço (Fórmula de Gauss)}
+
+Embora esta seção esteja dentro do capítulo sobre \textit{Determinantes} a \textit{Regra do Cadarço} é um método para calcular áreas (\textit{Fórmula de Gauss para cálculo de área}).
+NÃO se trata de determinantes de matrizes NÃO QUADRADAS. Os Determinantes são exclusivos das matrizes quadradas.
+
+A fórmula pode ser representada por:
+
+$$
+\mathrm{A}=\frac{1}{2}\cdot|(x_{n}\cdot y_{1}-x_{1}\cdot y_{n})+\sum_{i=1}^{n-1}(x_{i}\cdot y_{i+1}-x_{i+1}\cdot y_{i})|
+$$
+
+sendo:
+\begin{itemize}
+	\item $n$ o número de vértices do polígono;
+	\item $A$ a área do polígono;
+	\item $(x_i,y_i),\,\,\,\,i \in {1,2,\ldots,n}$ as coordenadas dos vértices.
+\end{itemize}
+\begin{example}
+	\video \, Calcule a área da figura formada pelos pontos $(0,0),(2,0),(2,2)\,\mathrm{e}\,(0,2)$
+
+	Os pontos do enunciado formam um quadrado de lado 2, desse modo, a 	área resultante deverá ser igual a 4, pois $2 \cdot 2 = 4$. Para aplicar a Regra do Cadarço é necessário definir:
+
+\begin{itemize}
+	\item $n=4$ pois existem 4 pontos!;
+	\item $P_{1}:(0,0)\Rightarrow x_{1}=0\;\mathrm{e\;y_{1}=0}$;
+	\item $P_{2}:(2,0)\Rightarrow x_{2}=2\;\mathrm{e\;y_{2}=0}$;
+	\item $P_{3}:(2,2)\Rightarrow x_{3}=2\;\mathrm{e\;y_{3}=2}$;
+	\item $P_{4}:(0,2)\Rightarrow x_{4}=0\;\mathrm{e\;y_{4}=2}$.
+\end{itemize}
+
+Substituindo na Fórmula:
+
+\begin{ceqn}
+	\begin{align*}
+	\mathrm{A} & = \frac{1}{2}\cdot|(x_{n}\cdot y_{1}-x_{1}\cdot y_{n})+\sum_{i=1}^{n-1}(x_{i}\cdot y_{i+1}-x_{i+1}\cdot y_{i})|\\
+	& = \frac{1}{2}\cdot|(x_{4}\cdot y_{1}-x_{1}\cdot y_{4})+\sum_{i=1}^{4-1}(x_{i}\cdot y_{i+1}-x_{i+1}\cdot y_{i})|\\
+	& = \frac{1}{2}\cdot|(x_{4}\cdot y_{1}-x_{1}\cdot y_{4})+\sum_{i=1}^{3}(x_{i}\cdot y_{i+1}-x_{i+1}\cdot y_{i})|\\
+	& = \frac{1}{2}\cdot|(x_{4}\cdot y_{1}-x_{1}\cdot y_{4})+(x_{1}\cdot y_{2}-x_{2}\cdot y_{1})+(x_{2}\cdot y_{3}-x_{3}\cdot y_{2})+(x_{3}\cdot y_{4}-x_{4}\cdot y_{3})|\\
+	& =  \frac{1}{2}\cdot|(0\cdot0-0\cdot2)+(0\cdot0-2\cdot0)+(2\cdot2-2\cdot0)+(2\cdot2-0\cdot2)|\\
+	& = \frac{1}{2}\cdot|(0-0)+(0-0)+(4-0)+(4-0)|\\
+	& = \frac{1}{2}\cdot|8|\\
+	& = \frac{8}{2}\\
+	& = 4
+	\end{align*}
+\end{ceqn}
+
+\doutor \url{https://www.youtube.com/watch?v=N8BoGdXgomk}
+\end{example}
+
+Embora seja muito mais fácil calcular a área do quadrado utilizando a relação de multiplicação entre os lados, a Regra do Cadarço serve
+para calcular a área de qualquer polígono bastando conhecer seus vértices, apenas.

@@ -1,0 +1,265 @@
+\chapterimage{chapter_head_2.pdf} % Chapter heading image
+
+\chapter{Revisão sobre conjuntos numéricos e equações}\index{Revisão sobre conjuntos numéricos e equações}
+\section{Introdução}\index{Introdução}
+
+O entendimento sobre conjuntos numéricos é fundamental pois através deste conhecimento é possível aplicar corretamente algoritmos e entender suas limitações. Uma situação, muito comum, quando se aplica a matemática em outras ciências é entender o significado daquele resultado obtido no problema real proposto.
+
+\section{Conjuntos numéricos}\index{Conjuntos numéricos}
+
+Os conjuntos numéricos têm aplicações desde tempos remotos e foram desenvolvidos ao longo do tempo para contemplar as possibilidades e soluções de problemas práticos.
+
+Imagine uma situação hipotética na qual um indivíduo possua dezenas de animais por exemplo, dezenas de vacas leiteiras. Um vizinho deste indivíduo também possui dezenas de vacas leiteiras. Ambos compartilham o mesmo local para levarem suas vacas para se alimentarem. Ambos vivem numa época em que não existe um tipo formal de escrita, sequer números! Ao final do dia eles retornam para suas "residências" juntamente com seus animais.
+
+O leitor pode imaginar que em algum momento isso possa gerar alguma confusão, não é? A confusão é que algum dos dois possa ter, ao final do dia, menos ou mais animais que realmente possuíam ao sair pela manhã. Este tipo de problema poderia ter acontecido e precisaria de uma solução.
+
+Talvez, a solução encontrada seja uma espécie de contagem através de comparação. Para cada animal existente em sua casa, haveria uma "pedra". Assim, ao sair pela manhã, cada vaca que deixasse o estaleiro uma pedra seria adicionada a um tipo de bolsa rudimentar que o indivíduo carregaria consigo durante a viagem.
+
+Ao voltar para sua casa, a comparação aconteceria novamente mas de modo inverso, ou seja, para cada vaca que entrasse no estaleiro, uma pedra seria retirada da bolsa. Deste modo, poderiam acontecer 3 situações possíveis, com a quantidade de pedras da bolsa:
+
+\begin{enumerate}
+	\item{Sobrar pedras: isso indicaria que algumas vacas não chegaram à sua casa;}
+	\item{Faltar pedras: isso indicaria que ele estava com mais vacas, possivelmente sendo alguma de seu vizinho;}
+	\item{Não sobrar pedras: todas as vacas que saíram, retornaram e se juntaram no estaleiro.}
+\end{enumerate}
+
+Esse processo funcionaria bem, até que o número de animais se tornasse grande o suficiente para ser inviável carregar todas as pedras em sua bolsa. Um sistema de contagem/registro seria interessante!
+
+Desse modo, é possível pensar na aplicabilidade do conjunto dos \textit{Número Naturais}, ou seja, da natureza!
+
+O conjunto dos \textit{Número Naturais}, será definido como segue:
+
+$$
+\mathbb{N}=\{1,2,3,\cdots\}
+$$
+
+É possível verificar um ponto de divergência em relação a outros autores de livros de matemática: o número 0 (zero) não será definido como número natural pois dificilmente o leitor ouvirá alguém dizendo \textit{"Eu possuo ZERO Ferrari!"} ou algo do tipo \textit{"Eu tenho ZERO reais na carteira!"}.
+
+A evolução continuou a acontecer e a necessidade de novos conjuntos numéricos foram aparecendo. A ideia de números negativos, comum para a atualidade nas relações financeiras, podem ser representados pelo conjunto dos \textit{Números Inteiros} e pode ser definido como:
+
+$$
+\mathbb{Z}=\{\cdots ,-2, -1, 0, 1, 2, \cdots\}
+$$
+
+Ressalta-se que o número 0 (zero), foi incorporado neste momento no conjunto entretanto, provavelmente ele foi o último algarismo a ser criado. O leitor pode fazer pesquisas adicionais para saber sobre a história do número 0.
+
+Pagamento de impostos sobre terras, construções de prédios, entre outros, levaram a humanidade a desenvolver um novo conjunto de números, os \textit{Números Racionais}:
+
+\begin{ceqn}
+\begin{align*}
+\mathbb{Q}=\left \{\frac{a}{b} , a \wedge b \in \mathbb{Z}, b \neq 0\right \}
+\end{align*}
+\end{ceqn}
+\\
+\indent No entanto, esses números não podiam descrever todas as situações possíveis. Um exemplo disso é o famoso problema proposto por Pitágoras juntamente com seu teorema.
+\\
+
+\begin{theorem}[Teorema de Pitágoras]
+	Em um triângulo retângulo, a soma dos quadrados dos catetos é igual ao quadrado da hipotenusa.
+\end{theorem}
+
+
+Porém, dado um triângulo retângulo com catetos iguais a 1, tem-se:
+
+\begin{ceqn}
+\begin{align*}
+c^2 &= a^2 + b^2 \\
+c^2 &= 1^2 + 1^2 \\
+c^2 &= 1+1 \\
+c^2 &= 2 \\
+c &= \sqrt{2}
+\end{align*}
+\end{ceqn}
+\\
+\indent Neste ponto, começaram os problemas para Pitágoras. Até o momento, não existia solução para descrever o número $\sqrt{2}$. Muito tempo passou e esse tipo de número, os números que não podem ser escritos de modo \textit{Racional}, foram definidos como \textit{Números Irracionais}. Alguns exemplos desses números pode ser visto abaixo:
+
+\begin{ceqn}
+	\begin{align*}
+	\mathbb{I}=\{\sqrt{2}, \sqrt{3}, \pi, \mathrm{e}, \cdots \}
+	\end{align*}
+\end{ceqn}
+\\
+\indent O conjunto dos \textit{Números Irracionais} é infinito!
+
+Assim, tudo parecia estar bem resolvido pois a \textbf{união} entre os \textit{Números Racionais} e \textit{Números Irracionais} foi definido como \textit{Números Reais}.
+
+Mas haveria um tipo de problema que poderia deixar, novamente, os matemáticos com os cabelos em pé. Seja a equação do segundo grau $x^2+4=0$ e calcule as suas raízes:
+
+\begin{ceqn}
+	\begin{align}\label{complexo}
+	x^2+4&=0 \\ \nonumber
+	x^2+4-4&=0-4 \\ \nonumber
+	x^2 + 0 &= -4 \\ \nonumber
+	x^2 &= -4 \\ \nonumber
+	x &= \pm \sqrt{-4} 
+	\end{align}
+\end{ceqn}
+\\
+\indent O leitor pode concluir, dependendo de sua formação matemática anterior, que este resultado, simplesmente, não existe. O que está profundamente equivocado!
+\\
+\indent A solução para este tipo de problema veio através da criação de um conjunto de números chamado \textit{Números Complexos} com a seguinte definição:
+
+\begin{ceqn}
+	\begin{align*}
+	i = \sqrt{-1}		
+	\end{align*}
+\end{ceqn}
+
+\indent Enfim, o Problema \ref{complexo} fica:
+
+\begin{ceqn}
+	\begin{align*}
+	x &= \pm \sqrt{-4} \\
+	x &= \pm \sqrt{4 \cdot (-1)} \\
+	x &= \pm \sqrt{4} \cdot \sqrt{-1} \\
+	x &= \pm 2 \cdot i
+	\end{align*}
+\end{ceqn}
+
+\indent De modo geral, a definição dos \textit{Números Complexos} é:
+
+\begin{ceqn}
+	\begin{align*}
+	\mathbb{C} = \left\{ a+bi, a \wedge b \in \mathbb{R}, b\neq 0 \right\}
+	\end{align*}
+\end{ceqn}
+
+
+\section{Resolução de equações}\index{Resolução de equações}
+
+\indent O leitor deve ter verificado a resolução do Problema \ref{complexo} que apareceu um $-4$ na resolução. Será explicado os conceitos básicos na resolução deste problema:
+
+\begin{example}
+\video \, Calcule a raíz da equação do primeiro grau, $2x+4=10$.
+\\
+\textbf{\textit{Solução:}}
+\\
+Calcular a raíz dessa equação, significa determinar o valor de $x$ de modo que a \textit{igualdade} aconteça. Assim, inicia-se o processo copiando a equação dada no enunciado:
+
+\begin{ceqn}
+	\begin{align*}
+	2x+4=10
+	\end{align*}
+\end{ceqn}
+
+Para determinar o valor da variável $x$ faz-se necessário isolar a variável em um dos lados da equação. Neste caso, será isolado do lado esquerdo da equação. O leitor pode ter imaginado que seria apenas \textit{passar o 4 para o outro lado com o sinal invertido}, mas se o sinal é de uma \textit{igualdade}, então passar algo de um lado para outro \textit{desequilibraria} a equação e o sinal de $=$ não seria conveniente.
+\\
+\indent O \textit{\textbf{correto}} é adicionar elementos em \textit{ambos os lados da igualdade}. Neste caso, percebe-se que o número $+4$ está do mesmo lado que a variável, logo ele está \textit{"atrapalhando"}, no entanto, se for adicionado $-4$ em ambos os lados da equação, resultará:
+
+\begin{ceqn}
+	\begin{align*}
+	2x+4 \textcolor{red}{-4} = 10 \textcolor{red}{-4}
+	\end{align*}
+\end{ceqn}
+
+A escolha do $-4$ não foi aleatória. No conjunto dos Número Reais, \textit{todo elemento (no caso $+4$) operado (operação $+$ usual) com seu simétrico ($-4$) resulta no elemento neutro ($0$ - zero) da operação ($+$)}, logo:
+
+\begin{ceqn}
+	\begin{align*}
+	2x + 0 = 6
+	\end{align*}
+\end{ceqn}
+
+Como visto acima, $0$ é o \textit{elemento neutro da operação de soma}, logo, qualquer elemento operado com o $0$, resultado nele mesmo, assim:
+
+\begin{ceqn}
+	\begin{align*}
+	2x = 6
+	\end{align*}
+\end{ceqn}
+
+É popularmente conhecido, neste passo, \textit{"se está multiplicando, então passa dividindo"}, mas acredito que o leitor queira saber o conceito correto, não é mesmo?
+A raiz de uma equação está relacionada com o valor de $x$ e não de $2x$, logo, se multiplicar ambos os lados da equação por $\frac{1}{2}$ ter-se-á:
+
+\begin{ceqn}
+	\begin{align*}
+	\left(\frac{1}{2} \right) \cdot \qquad 2x=6 \qquad \cdot \left(\frac{1}{2} \right)
+	\end{align*}
+\end{ceqn}
+
+Novamente, o $\frac{1}{2}$ não foi escolhido aleatoriamente, ele foi escolhido por ser o \textit{elemento inverso do $2$}. No conjunto dos números Reais, \textit{todo elemento (no caso, $2$) operado ($\cdot$) com seu inverso ($\frac{1}{2}$) resulta no elemento neutro ($1$) da operação (multiplicação, $\cdot$)}, assim:
+
+\begin{ceqn}
+	\begin{align*}
+	1 \cdot x = 6 \cdot \frac{1}{2}
+	\end{align*}
+\end{ceqn}
+
+Como o $1$ é o \textit{elemento neutro da multiplicação}, então $1 \cdot x = x$, logo:
+
+\begin{ceqn}
+	\begin{align*}
+	x=6 \cdot \frac{1}{2}
+	\end{align*}
+\end{ceqn}
+
+A multiplicação de frações é feita através da multiplicação entre os \textit{numeradores} e os \textit{denominadores} de cada fração, logo:
+
+\begin{ceqn}
+	\begin{align*}
+	x = \frac{6}{1} \cdot \frac{1}{2} = \frac{6 \cdot 1}{1 \cdot 2} = \frac{6}{2}
+	\end{align*}
+\end{ceqn}
+
+Assim, o número que multiplicado por $2$ (denominador) resulta em $6$ (numerador) é o $3$, então:
+
+\begin{ceqn}
+	\begin{align*}
+	x = 3
+	\end{align*}
+\end{ceqn}
+
+Para verificar se o resultado obtido está correto basta substituir o valor de $x$ calculado na equação do enunciado, então:
+
+\begin{ceqn}
+	\begin{align*}
+	2x+4 &= 10 \\
+	2 \cdot 3 +4 &= 10 \\
+	6+4 &= 10 \\
+	10 &= 10 \qquad \mathrm{Verdade!}
+	\end{align*}
+\end{ceqn}
+
+Assim, $x=3$ é a raíz da equação. É possível representar a solução da equação assim: $\mathrm{S}=\{3\}$.
+\\
+
+\doutor \, \url{https://www.youtube.com/watch?v=JY6BJWb1PVY}
+
+\end{example}
+
+Os conceitos abordados no exemplo é de fundamental importância para o entendimento da matemática, tornando-a menos \textit{"complicada"} conforme o leitor avança nos estudos. O leitor poderá ver alguns outros conceitos, tal como regras de sinais (\video) no link \url{https://www.youtube.com/watch?v=IykgcfYnsaQ}.
+
+Todo este material possuirá, como mencionado no Prefácio, uma breve teoria seguido por exemplos resolvidos; com o mesmo nível de detalhamento do exemplo anterior.
+
+\section{Exercícios}\index{Exercícios}
+
+\begin{exercise}
+	Faça uma representação gráfica dos conjuntos numéricos.
+\end{exercise}
+
+\begin{exercise}
+	Resolva a equação $2x-5=0$ considerando os conjuntos:
+	\begin{itemize}
+		\item[a.]{$\mathbb{N}$}
+		\item[b.]{$\mathbb{Z}$}
+		\item[c.]{$\mathbb{Q}$}
+		\item[d.]{$\mathbb{R}$}
+		\item[e.]{$\mathbb{C}$}
+	\end{itemize}
+\end{exercise}
+
+\begin{exercise}
+	Determine os conjuntos Domínio e Imagem para cada uma das funções abaixo:
+	\begin{itemize}
+		\item[a.]{$3x+4=0$}
+		\item[b.]{$f(x) = x^2 + 6$}
+		\item[c.]{$f(x) = \frac{1}{x}$}
+		\item[d.]{$f(x) = \sqrt{2x}$}
+		\item[e.]{$f(x) = \sqrt{-4x}$}
+		\item[f.]{$f(x) = \frac{4}{\sqrt{x^2-4}}$}
+	\end{itemize}
+\end{exercise}
+
+\begin{exercise}
+	Determine matematicamente se $f(x) = 3x + 6$ é crescente ou decrescente.
+\end{exercise}

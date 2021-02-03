@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.1.11)  3 FEB 2021 09:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.1.11)  3 FEB 2021 09:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2004,6 +2004,7 @@ File: ./Pictures/camera.png Graphic file (type png)
 <use ./Pictures/camera.png>
 Package pdftex.def Info: ./Pictures/camera.png  used on input line 357.
 (pdftex.def)             Requested size: 9.29721pt x 7.54149pt.
+ [35]
 Package mdframed Info: mdframed works in twoside mode on input line 390.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -2012,7 +2013,8 @@ File: ./Pictures/camera.png Graphic file (type png)
 <use ./Pictures/camera.png>
 Package pdftex.def Info: ./Pictures/camera.png  used on input line 391.
 (pdftex.def)             Requested size: 9.29721pt x 7.54149pt.
- [35] [36]) (./determinantes.tex [37] [38
+Package mdframed Info: Not enough space on this page on input line 428.
+ [36]) (./determinantes.tex [37] [38
 
 ]
 Cap\'{\i }tulo 4.
@@ -2175,10 +2177,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 44527 strings out of 482720
- 970819 string characters out of 5953503
- 1902806 words of memory out of 5000000
- 58653 multiletter control sequences out of 15000+600000
+ 44528 strings out of 482720
+ 970801 string characters out of 5953503
+ 1902775 words of memory out of 5000000
+ 58654 multiletter control sequences out of 15000+600000
  613592 words of font info for 255 fonts, out of 8000000 for 9000
  83 hyphenation exceptions out of 8191
  82i,21n,138p,3349b,2734s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2221,10 +2223,10 @@ e1/arkandis/electrum/yesb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/arka
 ndis/electrum/yesbo8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/arkandis/e
 lectrum/yesr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/arkandis/electrum
 /yesro8a.pfb>
-Output written on main.pdf (49 pages, 833927 bytes).
+Output written on main.pdf (49 pages, 833833 bytes).
 PDF statistics:
- 850 PDF objects out of 1000 (max. 8388607)
- 662 compressed objects within 7 object streams
+ 860 PDF objects out of 1000 (max. 8388607)
+ 670 compressed objects within 7 object streams
  167 named destinations out of 1000 (max. 500000)
- 40732 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 40748 words of extra memory for PDF output out of 42996 (max. 10000000)
 

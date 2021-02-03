@@ -53,11 +53,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}Adição e subtração de matrizes}{33}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Multiplicação de um escalar por uma matriz}{34}{subsection.3.3.1}%
+\contentsline {section}{\numberline {3.4}Multiplicação de um escalar por uma matriz}{34}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Multiplicação entre matrizes}{35}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.5}Multiplicação entre matrizes}{35}{section.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Tipos de matrizes}{36}{section.3.4}%
+\contentsline {section}{\numberline {3.6}Tipos de matrizes}{36}{section.3.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Determinantes}{39}{chapter.4}%
 \defcounter {refsection}{0}\relax 

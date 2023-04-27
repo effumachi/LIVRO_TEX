@@ -18,7 +18,7 @@ As grandezas vetoriais na Física são aquelas que possuem tanto um valor numér
 
 
 \section{Soma de vetores}\index{Soma de vetores}
-Teste de edição e git
+
 
 
 
@@ -39,6 +39,53 @@ As escalas mais conhecidas (Celsius e Fahrenheit) foram construídas usando, bas
     \textbf{Ponto de fusão da água}    & 0                         & 32                           & 273,15                 
     \end{tabular}
 \end{table}
+
+
+\begin{figure}[!h]
+    \caption{Representação das escalas termométricas}
+    
+    \centering % para centralizarmos a figura
+    \includegraphics[width=12cm]{Pictures/FISICA_EM/TERMOLOGIA/escalas_termometros.png} % leia abaixo
+    \label{figura:qualquernome}
+\end{figure}
+
+Como pode ser visto na figura acima, é possível estabelecer relações entre as escalas de modo a converter as temperaturas. Uma forma de estabelecer as conversões entre as escalas é fazer a proporção entre as razões $A/B$ de cada escala, assim:
+
+\begin{ceqn}
+\begin{align*}
+    \frac{T_C - 0}{100 - 0} = \frac{T_F - 32}{212 - 32} = \frac{T_K-273,15}{373,15 - 273,15}
+\end{align*}
+\begin{align*}
+    \frac{T_C}{100} = \frac{T_F - 32}{180} = \frac{T_K-273,15}{100}
+\end{align*}
+\end{ceqn}
+
+Através da relação acima, é possível relacionar as escalas e fazer a conversão entre elas, como segue:
+
+\subsubsection{Relação entre Celsius e Fahrenheit}
+\begin{ceqn}
+    \begin{align*}
+        \frac{T_C}{100} &= \frac{T_F - 32}{180} \\
+        \frac{180 \cdot T_C}{100} &= T_F -32 \\
+        \frac{9}{5} \cdot T_C &= T_F-32 \\
+    \end{align*}
+\end{ceqn}
+
+\subsubsection{Relação entre Celsius e Kelvin}
+\begin{ceqn}
+    \begin{align*}
+        \frac{T_C}{100} &= \frac{T_K-273,15}{100} \\
+        T_C&=T_K-273,15 \\
+    \end{align*}
+\end{ceqn}
+
+\subsubsection{Relação entre Fahrenheit e Kelvin}
+\begin{ceqn}
+    \begin{align*}
+        \frac{T_F - 32}{180} &= \frac{T_K-273,15}{100} \\
+    \end{align*}
+\end{ceqn}
+
 
 
 \begin{example}

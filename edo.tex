@@ -1,0 +1,170 @@
+\chapterimage{chapter_head_2.pdf} % Chapter heading image
+
+\chapter{Equações Diferenciais Ordinárias}
+\section{Definição}\index{Definição}
+Uma Equação Diferencial Ordinária é uma equação que envolve as derivadas de uma função de uma variável real e pode ser definida como:
+
+\begin{ceqn}
+    \begin{align*}
+        F \left (x, y(x), \frac{dy}{dx}, \frac{d^2 x}{dx^2}, \ldots , \frac{d^{n}y}{dx^{n}} \right )
+    \end{align*}
+\end{ceqn}
+
+Embora a definição seja geral, será abordado neste livro, apenas um tipo de EDO e tipo de solução, até a data de \date .
+
+\begin{example}
+    Considere a EDO $$\frac{dy}{dx} = 5x$$ 
+    Determine a família de soluções (solução geral).
+
+\solucao{}
+Para resolver esse tipo de EDO, basta separar as variáveis e os infinitesimais em lados opostos da equação. Após a separação, aplica-se a integral em ambos os lados, como segue:
+    \begin{ceqn}
+        \begin{align*}
+            \frac{dy}{dx} &= 5x \\
+            dy &= 5x dx \\
+            \int dy &= \int 5x dx \\
+            \int y^0 dy &= 5 \cdot \int x^1 dx \\
+            \frac{y^{0+1}}{0+1} &= 5 \cdot \frac{x^{1+1}}{1+1} + c \\
+            \frac{y}{1} &= 5 \cdot \frac{x^2}{2} + c \\
+            y &= \frac{5}{2} \cdot x^2 + c \\
+        \end{align*}
+    \end{ceqn}
+\end{example}
+
+
+Uma aplicação bem interessante é determinar as funções \textit{Posição} e \textit{Velocidade} de um objeto a partir de sua aceleração. A seguir, será determinada as funções dos movimentos Uniforme, Uniformemente Variado e outros tipos de movimento.
+
+\subsection{Movimento Uniforme}\index{Movimento Uniforme}
+
+A característica do Movimento Uniforme (M.U.) é que a aceleração é \textit{constante e igual a zero}, ou seja, $a=0$. A partir desse fato, a velocidade é constante, ou seja, como não variação na velocidade, pois $a=0$, então:
+
+\begin{ceqn}
+    \begin{align*}
+        v_m &= \frac{\Delta S}{\Delta t}
+    \end{align*}
+\end{ceqn}
+
+A equação acima nos mostra a relação para a determinação da velocidade média, no entanto, o que interessa é estudar a velocidade instantânea, assim, quando $\Delta t \rightarrow 0$, tem-se:
+
+\begin{ceqn}
+    \begin{align*}
+        v = \frac{dS}{dt}
+    \end{align*}
+\end{ceqn}
+
+Sabendo que a velocidade no M.U. é constante, então a EDO acima pode ser resolvida como segue:
+
+\begin{ceqn}
+    \begin{align*}
+        \frac{dS}{dt} =& v \\
+        dS =& v dt \\
+        \int dS =& \int v dt \\
+        S =& v \cdot \int dt \\
+        S =& v \cdot t + c \\
+    \end{align*}
+\end{ceqn}
+
+A constante $c$, proveniente da integração indefinida, pode ser renomeada de modo conveniente a ficar:
+
+\begin{ceqn}
+    \begin{align*}
+        S = S_0 + vt
+    \end{align*}
+\end{ceqn}
+
+Que é a tão conhecida \textit{Função Horária da Posição} ou, mais informalmente, "fórmula do sorvete" (para o idioma português =D).
+
+
+\subsection{Movimento Uniformemente Variado}\index{Movimento Uniformemente Variado}
+
+O Movimento Uniformemente Variado (M.U.V.) tem a característica de ter uma aceleração \textit{constante e diferente de zero}, desse modo:
+
+\begin{ceqn}
+    \begin{align*}
+        a_m =& \frac{\Delta v}{\Delta t}
+    \end{align*}
+\end{ceqn}
+
+De modo análogo, quando $\Delta t \rightarrow 0$, é possível reescrever a equação acima de modo a obter a aceleração instantânea
+
+\begin{ceqn}
+    \begin{align*}
+        a = \frac{dv}{dt}
+    \end{align*}
+\end{ceqn}
+
+Resolvendo a EDO acima separando os infinitesimais, tem-se:
+
+\begin{ceqn}
+    \begin{align*}
+        dv =& a \cdot dt \\
+        \int dv =& a \cdot \int dt \\
+        v =& a \cdot t + c\\
+    \end{align*}
+\end{ceqn}
+
+É possível renomear a constante $c$ por uma letra conveniente, tem-se:
+
+\begin{ceqn}
+    \begin{align*}
+        v = v_0 + at
+    \end{align*}
+\end{ceqn}
+
+A função acima é a \textit{Função Horária da Velocidade} e, a partir dela, será possível determinar a \textit{Função Horária da Posição}, fazendo:
+
+\begin{ceqn}
+    \begin{align*}
+        v =& \frac{dS}{dt} \\
+        dS =& v \ dt \\
+        dS =& (v_0 + at) dt \\
+        \int dS =& \int (v_0 + at) dt \\
+        S =& v_0 \int dt + a \cdot \int t dt \\
+        S =& v_0 t + a \cdot \frac{t^{1+1}}{1+1} + c \\
+        S =& S_0 + v_0 t + \frac{1}{2} a t^2 \\
+    \end{align*}
+\end{ceqn}
+
+As funções acima são conhecidas pelos estudantes do Ensino Médio de todo o Brasil (pelo menos deveria!), no entanto, a vida real possui movimentos muito complexos com acelerações que variam com o tempo. 
+
+Para esses tipos de movimento as funções não são abordadas no Ensino Médio, porém, elas poderão abordadas aqui.
+
+\subsection{Outros tipos de movimento}\index{Outros tipos de movimento}
+
+
+Digamos que temos um movimento onde a aceleração obedece a relação $a = \alpha t + \beta$, ou seja, uma função linear.
+
+Para determinar as funções horárias para a Velocidade e Posição, seguir-se-á o procedimento abordado anteriormente para M.U e M.U.V., assim:
+
+\begin{ceqn}
+    \begin{align*}
+        a =& \frac{dv}{dt} \\
+        dv =& a \cdot dt \\
+        \int dv =& (\alpha t + \beta) dt \\
+        v =& \int (\alpha t + \beta) dt \\
+        v =& \frac{1}{2} \alpha t^2 + \beta t + v_0 \\
+    \end{align*}
+\end{ceqn}
+
+E, por fim, para determinar a função da Posição:
+
+\begin{ceqn}
+    \begin{align*}
+        v =& \frac{dS}{dt} \\
+        dS =& v \cdot dt \\
+        dS =& (\frac{1}{2} \alpha t^2 + \beta t + v_0) dt \\
+        \int dS =& \int (\frac{1}{2} \alpha t^2 + \beta t + v_0) dt \\
+        S =& \frac{1}{2} \cdot \alpha \frac{t^{2+1}}{2+1} + \beta \frac{t^2}{2} + v_0 t + S_0 \\
+        S =& \frac{1}{2} \cdot \alpha \frac{1}{3} \cdot t^3 + \frac{1}{2} \cdot \beta t^2 + v_0 t + S_0 \\
+        S =& \frac{1}{6} \cdot \alpha t^3 + \frac{1}{2} \cdot \beta t^2 + v_0 t + S_0 \\
+    \end{align*}
+\end{ceqn}
+
+Exemplo do carro no semáforo!
+
+
+
+
+
+
+

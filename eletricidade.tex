@@ -96,13 +96,79 @@ Para o resistor 3, temos:
 
 \subsection{Associação de resistores em paralelo}\index{Resistores em paralelo}
 
+Os resistores associados paralelamente possuem duas características:
+
+\begin{itemize}
+    \item{A voltagem nos resistores são iguais a voltagem da fonte}
+    \item{A corrente elétrica em cada resistor muda}
+\end{itemize}
+
+A resistência equivalente a uma quantidade "n" de resistores em paralelo pode ser determinada como:
+
+\begin{ceqn}
+    \begin{align*}
+        \frac{1}{R_{\text{eq}}} = \sum_{i=1}^{n} \frac{1}{R_i}
+    \end{align*}
+\end{ceqn}
+
+
+No nosso exemplo da aula temos dois resistores em paralelo; um com $6 \Omega$ e outro com $3 \Omega$.
+
+Substituindo na fórmula, obteremos:
+
+\begin{ceqn}
+    \begin{align*}
+        \frac{1}{R_{\text{eq}}} =& \frac{1}{6} + \frac{1}{3} \\
+        =& 0,17+ 0,33 \\
+        \frac{1}{R_{\text{eq}}} =& 0,5 \\
+        R_{\text{eq}} =& \frac{1}{0,5} \\
+        R_{\text{eq}} =& 2 \Omega \\
+    \end{align*}
+\end{ceqn}
+
+Logo, a associação dos resistores em paralelo resultou em um resistor equivalente de $2 \Omega$. 
+
+Esse resistor equivalente, agora, está em série com o outro resistor de $3 \Omega$. Desse modo, a resistência total do circuito será de $2 \Omega + 3 \Omega = 5 \Omega$
+
+pela Primeira Lei de Ohm, é sabido que $U = R \cdot i$. O valor da tensão da fonte é igual a $60 \text{V}$, assim, substituindo os valores conhecidos, será possível calcular a corrente elétrica, como segue:
+
+
+\begin{ceqn}
+    \begin{align*}
+        U =& R \cdot i \\
+        i =& \frac{U}{R} \\
+        i =& \frac{60 \text{V}}{5 \Omega} \\
+        i =& 12 \text{A} \\
+    \end{align*}
+\end{ceqn}
+
+
+Segunda lei de Ohm
+
+\begin{ceqn}
+    \begin{align*}
+        R =& \rho \cdot \frac{L}{A}
+    \end{align*}
+\end{ceqn}
 
 
 
+\begin{ceqn}
+    \begin{align*}
+        R =& \rho \cdot \frac{L}{A} \\
+        =& 17 [\Omega \cdot \text{nm}] \cdot \frac{0,5 [\text{nm}]}{0,05 [\text{nm}^2]}
+    \end{align*}
+\end{ceqn}
 
-
-
-
-
+Equação de Clapeyron
+\begin{ceqn}
+    \begin{align*}
+        p \cdot V =& n \cdot R \cdot T \\
+        2 \text{atm} \cdot 2 \text{m}^3 =& n \cdot 0,0000821 \cdot 100 \text{K} \\
+        4 =& n \cdot {0,00821} \\
+        n =& \frac{4}{0,00821} \\
+        n \approx& 487,2 \text{mols}\\
+    \end{align*}
+\end{ceqn}
 
 

@@ -27,6 +27,7 @@
 %----------------------------------------------------------------------------------------
 %	VARIOUS REQUIRED PACKAGES AND CONFIGURATIONS
 %----------------------------------------------------------------------------------------
+
 \usepackage{nccmath} % Required for center equantions in math environment AMSMATH \begin{ceqn}
 \usepackage{graphicx} % Required for including pictures
 \graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
@@ -53,6 +54,8 @@
 \pgfplotsset{compat=newest}
 \usepackage{mathrsfs}
 \usetikzlibrary{arrows}
+
+
 
 % fim do teste do geogebra
 
@@ -100,6 +103,7 @@
 
 \usepackage{microtype} % Slightly tweak font spacing for aesthetics
 \usepackage[utf8]{inputenc} % Required for including letters with accents
+\usepackage{csquotes}
 \usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY AND INDEX
@@ -107,18 +111,19 @@
 \usepackage[style=authoryear-comp,
 		citestyle=numeric,
 		autocite=inline,
-		labelyear=true,
+		labeldateparts=true,
 		uniquename=full,
 		uniquelist=true,
 		sorting=nyt,
 		sortcites=true,
 		autopunct=true,
-		babel=hyphen,
+		autolang=hyphen,
 		hyperref=true,
 		abbreviate=false,
 		backref=false,
 		backend=biber,
 		isbn=true,
+            defernumbers=true,
 		doi=true]{biblatex}
 
 %\usepackage[style=numeric,citestyle=numeric,sorting=nyt,sortcites=true,autopunct=true,babel=hyphen,hyperref=true,abbreviate=false,backref=true,backend=biber]{biblatex}
@@ -612,7 +617,8 @@ linewidth=4pt]{exBox}
 %----------------------------------------------------------------------------------------
 
 \usepackage{hyperref}
-\hypersetup{hidelinks,backref=true,pagebackref=true,hyperindex=true,colorlinks=false,breaklinks=true,urlcolor=red,bookmarks=true,bookmarksopen=false}
+%\hypersetup{hidelinks,backref=true,pagebackref=true,hyperindex=true,colorlinks=false,breaklinks=true,urlcolor=red,bookmarks=true,bookmarksopen=false}
+\hypersetup{hidelinks,colorlinks=false,breaklinks=true,urlcolor=red,bookmarksopen=false}
 
 \usepackage{bookmark}
 \bookmarksetup{
